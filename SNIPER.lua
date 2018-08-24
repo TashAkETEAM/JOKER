@@ -1,10 +1,11 @@
 --[[
- _____ ____  _   _    _    _  _______
-|_   _/ ___|| | | |  / \  | |/ / ____|
-  | | \___ \| |_| | / _ \ | ' /|  _|
-  | |  ___) |  _  |/ ___ \| . \| |___
-  |_| |____/|_| |_/_/   \_\_|\_\_____|
-           CH > @TshAkETEAM
+ ____  __    _  •   _ ____  _______  _____
+/ __ ||   \ | || | | |    || |_____| |___  \
+\___ \| |\ \| || | | |____|| |__     |____|/
+ __)  | | \ \ || | | |     | |__|    ||\\
+|____/|_|  \__||_| |_|     | |_____  || \\
+                           |_|_____| 
+CH > @TshAkETEAM
 --]]
 --------------------------------------
 serpent = require('serpent')
@@ -691,7 +692,7 @@ break
 end
 end
 end 
-info = '👤┇العضو ~⪼ ['..(result.first_name_ or value)..'](t.me/'..(result.username_ or 'tshaketeam')..')\n'..text
+info = '┇العضو ~⪼ ['..(result.first_name_ or value)..'](t.me/'..(result.username_ or 'tshaketeam')..')\n'..text
 send(msg.chat_id_, msg.id_, 1,info, 1, 'md')
 end
 getUser(value, keko333)
@@ -702,7 +703,7 @@ function TSadd(msg) -- Function add && rem
 local text = msg.content_.text_
 if (text == 'تعطيل') and not is_sudo(msg) then
 function TSby(extra,result,success)
-info = '💬┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'tshaketeam')..')\n'
+info = '┇بواسطه ~⪼ ['..result.first_name_..'](t.me/'..(result.username_ or 'tshaketeam')..')\n'
 local keko2 = database:get("add"..bot_id)
 if keko2 then
 local keko = "https://api.telegram.org/bot" ..token.. '/getChatMember?chat_id=' .. msg.chat_id_ .. '&user_id='..msg.sender_user_id_
@@ -718,7 +719,7 @@ end
 if database:get( 'tshake:'..bot_id.."charge:"..msg.chat_id_) then
 database:del( 'tshake:'..bot_id.."charge:"..msg.chat_id_)
 function thsake_info(k1,k2)
-send(msg.chat_id_, msg.id_, 1, info.."☑️┇تم تعطيل المجموعه {"..k2.title_.."}", 1, 'md')
+send(msg.chat_id_, msg.id_, 1, info.."✔┇تم تعطيل المجموعه {"..k2.title_.."}", 1, 'md')
 end
 openChat(msg.chat_id_,thsake_info)
 database:srem("thsake:gog"..bot_id, msg.chat_id_)
@@ -745,7 +746,6 @@ end
 -- end function
 if (text == 'تفعيل') and not is_sudo(msg) then
 local keko222 = 'https://tshake.tk/TshakeApi/ch.php?id='..msg.sender_user_id_..''
-local ress = https.request(keko222)
 if ress then
 if (ress and not ress:match("(.*)(html)(.*)") and ress ~= "on") then
 send(msg.chat_id_, msg.id_, 1, ress, 1, 'md')
