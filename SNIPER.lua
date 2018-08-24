@@ -5,7 +5,7 @@
  __)  | | \ \ || | | |     | |__|    ||\\
 |____/|_|  \__||_| |_|     | |_____  || \\
                            |_|_____| 
-CH > @TshAkETEAM
+CH > @SNIIPER_TIME
 --]]
 --------------------------------------
 serpent = require('serpent')
@@ -37,9 +37,9 @@ print(Green.."\nFiles Now Started : \n "..reset)
 for i,v in pairs(files_tshake) do
 print(Blue..i..red..' - \27[10;33m'..v..',\27[m')  end
 print(Green.."\nThes all Files.\n\n\n"..reset)
-io.popen("mkdir files_tshake")
-os.execute('cd .. &&  rm -rf .telegram-cli')
-os.execute('cd .. &&  rm -fr .telegram-cli')
+io.popen("mkdir files_SNIIPER")
+os.execute('cd .. SNIIPER &&  rm -rf .telegram-cli')
+os.execute('cd .. SNIIPER &&  rm -fr .telegram-cli')
 --         »»                 Start Functions                         ««              --
 --         »»                 is_sudo                         ««              --
 function is_sudo(msg)
@@ -54,24 +54,24 @@ end
 function is_admin(msg)
 user_id = msg.sender_user_id_
 local var = false 
-local admin = database:sismember('tshake:'..bot_id..'admins:', user_id)
+local admin = database:sismember('SNIIPER:'..bot_id..'admins:', user_id)
 if admin then var = true end
 for k,v in pairs(sudo_users) do
 if user_id == v then var = true end
 end
-local keko_add_sudo = redis:get('tshake:'..bot_id..'sudoo'..user_id..'')
+local keko_add_sudo = redis:get('SNIIPER:'..bot_id..'sudoo'..user_id..'')
 if keko_add_sudo then var = true end
 return var
 end
 --         »»                 is_admin                         ««              --
 function ck_admin(user_id)
 local var = false 
-local admin = database:sismember('tshake:'..bot_id..'admins:', user_id)
+local admin = database:sismember('SNIIPER:'..bot_id..'admins:', user_id)
 if admin then var = true end
 for k,v in pairs(sudo_users) do
 if user_id == v then var = true end
 end
-local keko_add_sudo = redis:get('tshake:'..bot_id..'sudoo'..user_id..'')
+local keko_add_sudo = redis:get('SNIIPER:'..bot_id..'sudoo'..user_id..'')
 if keko_add_sudo then var = true end
 return var
 end
@@ -80,8 +80,8 @@ function is_creator(msg)
 user_id = msg.sender_user_id_
 chat_id = msg.chat_id_
 local var = false
-local creator = database:sismember('tshake:'..bot_id..'creator:'..chat_id, user_id) 
-local admin = database:sismember('tshake:'..bot_id..'admins:', user_id)
+local creator = database:sismember('SNIIPER:'..bot_id..'creator:'..chat_id, user_id) 
+local admin = database:sismember('SNIIPER:'..bot_id..'admins:', user_id)
 if creator then var = true end
 if admin then var = true end
 for k,v in pairs(sudo_users) do
@@ -95,11 +95,11 @@ function is_vip(msg)
 user_id = msg.sender_user_id_
 chat_id = msg.chat_id_
 local var = false
-local mod = database:sismember('tshake:'..bot_id..'mods:'..chat_id, user_id)  
-local admin = database:sismember('tshake:'..bot_id..'admins:', user_id)  
-local owner = database:sismember('tshake:'..bot_id..'owners:'..chat_id, user_id)
-local creator = database:sismember('tshake:'..bot_id..'creator:'..chat_id, user_id)  
-local vip = database:sismember('tshake:'..bot_id..'vipgp:'..chat_id, user_id)
+local mod = database:sismember('SNIIPER:'..bot_id..'mods:'..chat_id, user_id)  
+local admin = database:sismember('SNIIPER:'..bot_id..'admins:', user_id)  
+local owner = database:sismember('SNIIPER:'..bot_id..'owners:'..chat_id, user_id)
+local creator = database:sismember('SNIIPER:'..bot_id..'creator:'..chat_id, user_id)  
+local vip = database:sismember('SNIIPER:'..bot_id..'vipgp:'..chat_id, user_id)
 if mod then var = true end
 if owner then var = true end
 if creator then var = true end
@@ -108,7 +108,7 @@ if vip then var = true end
 for k,v in pairs(sudo_users) do
 if user_id == v then
 var = true end end
-local keko_add_sudo = redis:get('tshake:'..bot_id..'sudoo'..user_id..'')
+local keko_add_sudo = redis:get('SNIIPER:'..bot_id..'sudoo'..user_id..'')
 if keko_add_sudo then var = true end
 return var end
 --         »»                 is_owner                         ««              --
@@ -116,9 +116,9 @@ function is_owner(msg)
 user_id = msg.sender_user_id_
 chat_id = msg.chat_id_
 local var = false
-local admin = database:sismember('tshake:'..bot_id..'admins:', user_id)  
-local owner = database:sismember('tshake:'..bot_id..'owners:'..chat_id, user_id)
-local creator = database:sismember('tshake:'..bot_id..'creator:'..chat_id, user_id)  
+local admin = database:sismember('SNIIPER:'..bot_id..'admins:', user_id)  
+local owner = database:sismember('SNIIPER:'..bot_id..'owners:'..chat_id, user_id)
+local creator = database:sismember('SNIIPER:'..bot_id..'creator:'..chat_id, user_id)  
 if owner then var = true
 end if admin then
 var = true end if creator then var = true end
@@ -126,7 +126,7 @@ for k,v in pairs(sudo_users) do
 if user_id == v then
 var = true
 end end
-local keko_add_sudo = redis:get('tshake:'..bot_id..'sudoo'..user_id..'')
+local keko_add_sudo = redis:get('SNIIPER:'..bot_id..'sudoo'..user_id..'')
 if keko_add_sudo then var = true end
 return var
 end
@@ -135,10 +135,10 @@ function is_mod(msg)
 user_id = msg.sender_user_id_
 chat_id = msg.chat_id_
 local var = false
-local mod = database:sismember('tshake:'..bot_id..'mods:'..chat_id, user_id)  
-local admin = database:sismember('tshake:'..bot_id..'admins:', user_id)  
-local owner = database:sismember('tshake:'..bot_id..'owners:'..chat_id, user_id)
-local creator = database:sismember('tshake:'..bot_id..'creator:'..chat_id, user_id)  
+local mod = database:sismember('SNIIPER:'..bot_id..'mods:'..chat_id, user_id)  
+local admin = database:sismember('SNIIPER:'..bot_id..'admins:', user_id)  
+local owner = database:sismember('SNIIPER:'..bot_id..'owners:'..chat_id, user_id)
+local creator = database:sismember('SNIIPER:'..bot_id..'creator:'..chat_id, user_id)  
 if mod then var = true end
 if owner then var = true end
 if creator then var = true end
