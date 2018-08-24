@@ -233,8 +233,8 @@ sudo apt-get install libexpat1-dev  -y
 reset
 echo -e "\e[38;5;77m     »»     Welcome to install Tshake     ««\e[0m"
 echo -e "\e[38;5;77m       »»     Install Tshake [100%]     ««\e[0m"
-echo -e "\27[34m     »»     Tshake Channel ; @TshakeTeam     ««\e[0m"
+echo -e "\27[34m     »»     SNIIPER Channel ; @SNIIPER_TIME     ««\e[0m"
 chmod +x tg
 chmod +x ts
-chmod +x TsAu
+chmod +x SNIIPER
 ./ts
