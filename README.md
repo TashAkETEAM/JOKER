@@ -6,11 +6,7 @@ ________________________________________________________________________________
 Installation
 ------------
 
-install :
-
-```git clon
-https://github.com/KASPERZAHRAA/SNIIPER && cd SNIIPER && chmod
-+x install.sh && ./install.sh```
+install :```git clone https://github.com/KASPERZAHRAA/SNIIPER && cd SNIIPER && chmod +x install.sh && ./install.sh```
 
 ______________________________________________________________________________________________________________________
 
