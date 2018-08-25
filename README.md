@@ -5,7 +5,7 @@ ________________________________________________________________________________
 
 كود تنصيب سورس القناص
 ------------
- "` `git clone https://github.com/KASPERZAHRAA/SNIIPER && cd SNIIPER && chmod + x install.sh &&. / install.sh```
+```git clone https://github.com/KASPERZAHRAA/SNIIPER && cd SNIIPER && chmod + x install.sh &&. / install.sh```
 
 ______________________________________________________________________________________________________________________
 
