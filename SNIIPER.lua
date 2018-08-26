@@ -888,198 +888,198 @@ if text then
 if (text == "قفل التاك") then
 local tsX_o = database:get("lock_tag:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل التاك")
+tsX000("lock",msg,"┇ التاك مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل التاك")
+tsX000("lock",msg,"┇تم قفل التاك")
 database:set("lock_tag:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الشارحه") then
 local tsX_o = database:get("lock_sarha:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الشارحه")
+tsX000("lock",msg,"┇الشارحه مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الشارحه")
+tsX000("lock",msg,"┇تم قفل الشارحه")
 database:set("lock_sarha:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل تعديل الميديا") then
 local tsX_o = database:get("SNIIPER:lo:edit:new:"..bot_id..msg.chat_id_)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل تعديل الميديا")
+tsX000("lock",msg,"┇تعديل الميديا مقفول !")
 else
-tsX000("lock",msg,"☑┇تم قفل تعديل الميديا")
+tsX000("lock",msg,"┇تم قفل تعديل الميديا")
 database:set("SNIIPER:lo:edit:new:"..bot_id..msg.chat_id_,"ok")
 end
 end
 if (text == "قفل الكلايش") then
 local tsX_o = database:get("lock_word:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الكلايش")
+tsX000("lock",msg,"┇الكلايش مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الكلايش")
+tsX000("lock",msg,"┇تم قفل الكلايش")
 database:set("lock_word:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل التعديل") then
 local tsX_o = database:get("lock_edit:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل التعديل")
+tsX000("lock",msg,"┇التعديل مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل التعديل")
+tsX000("lock",msg,"┇تم قفل التعديل")
 database:set("lock_edit:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل التكرار") then
 local tsX_o = database:get("lock_lllll:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل التكرار")
+tsX000("lock",msg,"┇التكرار مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل التكرار")
+tsX000("lock",msg,"┇تم قفل التكرار")
 database:set("lock_lllll:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل المتحركه") then
 local tsX_o = database:get("lock_gif:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل المتحركه")
+tsX000("lock",msg,"┇المتحركه مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل المتحركه")
+tsX000("lock",msg,"┇تم قفل المتحركه")
 database:set("lock_gif:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الملفات") then
 local tsX_o = database:get("lock_files:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الملفات")
+tsX000("lock",msg,"┇الملفات مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الملفات")
+tsX000("lock",msg,"┇تم قفل الملفات")
 database:set("lock_files:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الماركدون") then
 local tsX_o = database:get("lock_mark:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الماركدون")
+tsX000("lock",msg,"┇الماركدون مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل الماركدون")
+tsX000("lock",msg,"┇تم قفل الماركدون")
 database:set("lock_mark:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الصور") then
 local tsX_o = database:get("lock_photo:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الصور")
+tsX000("lock",msg,"┇الصور مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الصور")
+tsX000("lock",msg,"┇تم قفل الصور")
 database:set("lock_photo:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الملصقات") then
 local tsX_o = database:get("lock_stecker:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الملصقات")
+tsX000("lock",msg,"┇الملصقات مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الملصقات")
+tsX000("lock",msg,"┇تم قفل الملصقات")
 database:set("lock_stecker:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الفيديو") then
 local tsX_o = database:get("lock_video:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الفيديو")
+tsX000("lock",msg,"┇الفيديو مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل الفيديو")
+tsX000("lock",msg,"┇تم قفل الفيديو")
 database:set("lock_video:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الانلاين") then
 local tsX_o = database:get("lock_inline:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الانلاين")
+tsX000("lock",msg,"┇الانلاين مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل الانلاين")
+tsX000("lock",msg,"┇تم قفل الانلاين")
 database:set("lock_inline:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الدردشه") then
 local tsX_o = database:get("lock_chat:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الدردشه")
+tsX000("lock",msg,"┇الدردشه مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الدردشه")
+tsX000("lock",msg,"┇تم قفل الدردشه")
 database:set("lock_chat:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل التوجيه") then
 local tsX_o = database:get("lock_fwd:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل التوجيه")
+tsX000("lock",msg,"┇التوجيه مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل التوجيه")
+tsX000("lock",msg,"┇تم قفل التوجيه")
 database:set("lock_fwd:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل التثبيت") then
 local tsX_o = database:get("lock_pin:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل التثبيت")
+tsX000("lock",msg,"┇التثبيت مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل التثبيت")
+tsX000("lock",msg,"┇تم قفل التثبيت")
 database:set("lock_pin:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الاغاني") then
 local tsX_o = database:get("lock_audeo:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الاغاني")
+tsX000("lock",msg,"┇الاغاني مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الاغاني")
+tsX000("lock",msg,"┇تم قفل الاغاني")
 database:set("lock_audeo:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الصوت") then
 local tsX_o = database:get("lock_voice:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الصوت")
+tsX000("lock",msg,"┇الصوت مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل الصوت")
+tsX000("lock",msg,"┇تم قفل الصوت")
 database:set("lock_voice:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الجهات") then
 local tsX_o = database:get("lock_contact:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الجهات")
+tsX000("lock",msg,"┇الجهات مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الجهات")
+tsX000("lock",msg,"┇تم قفل الجهات")
 database:set("lock_contact:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
-if (text == "قفل العربيه") then
+if (text == "قفل الفارسيه") then
 local tsX_o = database:get("lock_ar:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل العربيه")
+tsX000("lock",msg,"┇الفارسيه مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل العربيه")
+tsX000("lock",msg,"┇تم قفل الفارسيه")
 database:set("lock_ar:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الانكليزيه") then
 local tsX_o = database:get("lock_en:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الانكليزيه")
+tsX000("lock",msg,"┇بالفعل تم قفل الانكليزيه")
 else
-tsX000("lock",msg,"☑┇تم قفل الانكليزيه")
+tsX000("lock",msg,"┇تم قفل الانكليزيه")
 database:set("lock_en:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الميديا") then
 local tsX_o = database:get("lock_media:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الميديا")
+tsX000("lock",msg,"┇الميديا مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الميديا")
+tsX000("lock",msg,"┇تم قفل الميديا")
 database:set("lock_media:SNIIPER"..msg.chat_id_..bot_id,"ok")
 database:set("lock_audeo:SNIIPER"..msg.chat_id_..bot_id,"ok")
 database:set("lock_video:SNIIPER"..msg.chat_id_..bot_id,"ok")
@@ -1093,25 +1093,25 @@ end
 if (text == "قفل الروابط") then
 local tsX_o = database:get("lock_link:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الروابط")
+tsX000("lock",msg,"┇الروابط مقفوله!")
 else
-tsX000("lock",msg,"☑┇تم قفل الروابط")
+tsX000("lock",msg,"┇تم قفل الروابط")
 database:set("lock_link:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل المعرف") then
 local tsX_o = database:get("lock_username:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل المعرف")
+tsX000("lock",msg,"┇المعرف مقفول!")
 else
-tsX000("lock",msg,"☑┇تم قفل المعرف")
+tsX000("lock",msg,"┇تم قفل المعرف")
 database:set("lock_username:SNIIPER"..msg.chat_id_..bot_id,"ok")
 end
 end
 if (text == "قفل الاشعارات") then
 local tsX_o = database:get("lock_new:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل الاشعارات")
+tsX000("lock",msg,"☑┇الاشعارات مقفوله!")
 else
 tsX000("lock",msg,"☑┇تم قفل الاشعارات")
 database:set("lock_new:SNIIPER"..msg.chat_id_..bot_id,"ok")
@@ -1120,7 +1120,7 @@ end
 if (text == "قفل البوتات بالطرد") then
 local tsX_o = database:get("lock_botAndBan:SNIIPER"..msg.chat_id_..bot_id)
 if tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم قفل البوتات بالطرد")
+tsX000("lock",msg,"☑┇البوتات بالطرد مقفوله! ")
 else
 tsX000("lock",msg,"☑┇تم قفل البوتات بالطرد")
 database:set("lock_botAndBan:SNIIPER"..msg.chat_id_..bot_id,"ok")
@@ -1149,7 +1149,7 @@ end
 if (text == "فتح الاشعارات") then
 local tsX_o = database:get("lock_new:SNIIPER"..msg.chat_id_..bot_id)
 if not tsX_o then
-tsX000("lock",msg,"☑┇بالفعل تم فتح الاشعارات")
+tsX000("lock",msg,"☑┇الاشعارات مقفوله!")
 else
 tsX000("lock",msg,"☑┇تم فتح الاشعارات")
 database:del("lock_new:SNIIPER"..msg.chat_id_..bot_id,"ok")
@@ -1657,7 +1657,7 @@ if msg.content_.text_ then
 if text:match("^مغادره$") then
 if not database:get('SNIIPER:'..bot_id..'leave:groups') then
 chat_leave(msg.chat_id_, bot_id)
-send(msg.chat_id_, msg.id_, 1, "☑┇تم مغادره المجموعه", 1, 'md')
+send(msg.chat_id_, msg.id_, 1, "☑┇راح اروح احبكم♥", 1, 'md')
 else
 end
 end
@@ -2206,25 +2206,25 @@ local apmd = {string.match(text, "^(تنزيل ادمن) (%d+)$")}
 database:srem(hash, apmd[2])
 tsX000(apmd[2],msg,"☑┇ تم تنزيله من ادمنيه البوت")
 end
-if (text:match("^رفع عضو مميز$") or text:match("^رفع مميز$"))  and is_owner(msg) and msg.reply_to_message_id_ then
+if (text:match("^رفع مميز$") or text:match("^رفع مميز$"))  and is_owner(msg) and msg.reply_to_message_id_ then
 function promote_by_reply(extra, result, success)
 local hash =  'SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_
 if database:sismember(hash, result.sender_user_id_) then
-tsX000("prore",msg,"☑┇بالفعل تم رفعه عضو مميز") 
+tsX000("prore",msg,"☑┇بالفعل تم رفعه مميز") 
 else
 database:sadd(hash, result.sender_user_id_)
-tsX000("prore",msg,"☑┇تم رفعه عضو مميز")
+tsX000("prore",msg,"☑┇تم رفعه مميز")
 end
 end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,promote_by_reply)
 end
-local text = text:gsub('رفع مميز','رفع عضو مميز')
-if text:match("^رفع عضو مميز @(.*)$") and is_owner(msg) then
-local apmd = {string.match(text, "^(رفع عضو مميز) @(.*)$")}
+local text = text:gsub('رفع مميز','رفع مميز')
+if text:match("^رفع مميز @(.*)$") and is_owner(msg) then
+local apmd = {string.match(text, "^(رفع مميز) @(.*)$")}
 function promote_by_username(extra, result, success)
 if result.id_ then
 database:sadd('SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_, result.id_)
-texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apmd[2] or 'SNIIPERteam')..')\n☑┇تم رفعه عضو مميز'
+texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apmd[2] or 'SNIIPERTIME')..')\n☑┇تم رفعه مميز'
 else
 texts = '✖┇خطاء'
 end
@@ -2232,11 +2232,11 @@ send(msg.chat_id_, msg.id_, 1, texts, 1, 'md')
 end
 resolve_username(apmd[2],promote_by_username)
 end
-local text = text:gsub('رفع مميز','رفع عضو مميز')
-if text:match("^رفع عضو مميز (%d+)$") and is_owner(msg) then
+local text = text:gsub('رفع مميز','رفع مميز')
+if text:match("^رفع مميز (%d+)$") and is_owner(msg) then
 local apmd = {string.match(text, "^(رفع عضو مميز) (%d+)$")}
 database:sadd('SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_, apmd[2])
-tsX000(apmd[2],msg,"☑┇تم رفعه عضو مميز")
+tsX000(apmd[2],msg,"☑┇تم رفعه مميز")
 end
 if text and text == "تعين الايدي" and is_owner(msg) then
 send(msg.chat_id_, msg.id_, 1,  '☑┇ ارسل الان النص\n☑┇ يمكنك اضافه :\n- `#username` > اسم المستخدم\n- `#msgs` > عدد رسائل المستخدم\n- `#photos` > عدد صور المستخدم\n- `#id` > ايدي المستخدم\n- `#stast` > موقع المستخدم \n- `#edit` > عدد السحكات', 1, 'md')
@@ -2252,23 +2252,23 @@ if text and text == "مسح الايدي" and is_owner(msg) then
 send(msg.chat_id_, msg.id_, 1,  '✖┇ تم المسح بنجاح', 1, 'md')
 database:del("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_)
 end
-if (text:match("^تنزيل عضو مميز$") or text:match("^تنزيل مميز$")) and is_owner(msg) and msg.reply_to_message_id_ then
+if (text:match("^تنزيل مميز$") or text:match("^تنزيل مميز$")) and is_owner(msg) and msg.reply_to_message_id_ then
 function demote_by_reply(extra, result, success)
 local hash =  'SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_
 if not database:sismember(hash, result.sender_user_id_) then
 send(msg.chat_id_, msg.id_, 1, '👤┇العضو ~⪼ *('..result.sender_user_id_..')* \n ☑┇بالفعل تم تنزيله من اعضاء الممزين البوت', 1, 'md')
-tsX000("prore",msg,"☑┇بالفعل تم تنزيله من اعضاء الممزين البوت")  
+tsX000("prore",msg,"☑┇بالفعل تم تنزيله من مميزين البوت")  
 else
 database:srem(hash, result.sender_user_id_)
-tsX000("prore",msg,"☑┇تم تنزيله من اعضاء الممزين البوت")
+tsX000("prore",msg,"☑┇تم تنزيله من مميزين البوت")
 end
 end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,demote_by_reply)
 end
-local text = text:gsub('تنزيل مميز','تنزيل عضو مميز')
-if text:match("^تنزيل عضو مميز @(.*)$") and is_owner(msg) then
+local text = text:gsub('تنزيل مميز','تنزيل مميز')
+if text:match("^تنزيل مميز @(.*)$") and is_owner(msg) then
 local hash =  'SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_
-local apmd = {string.match(text, "^(تنزيل عضو مميز) @(.*)$")}
+local apmd = {string.match(text, "^(تنزيل مميز) @(.*)$")}
 function demote_by_username(extra, result, success)
 if result.id_ then
 database:srem(hash, result.id_)
@@ -2280,12 +2280,12 @@ send(msg.chat_id_, msg.id_, 1, texts, 1, 'md')
 end
 resolve_username(apmd[2],demote_by_username)
 end
-local text = text:gsub('تنزيل مميز','تنزيل عضو مميز')
-if text:match("^تنزيل عضو مميز (%d+)$") and is_owner(msg) then
+local text = text:gsub('تنزيل مميز','تنزيل مميز')
+if text:match("^تنزيل مميز (%d+)$") and is_owner(msg) then
 local hash =  'SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_
-local apmd = {string.match(text, "^(تنزيل عضو مميز) (%d+)$")}
+local apmd = {string.match(text, "^(تنزيل مميز) (%d+)$")}
 database:srem(hash, apmd[2])
-tsX000(apmd[2],msg,"☑┇تم تنزيله من اعضاء الممزين البوت")
+tsX000(apmd[2],msg,"☑┇تم تنزيله من مميزين البوت")
 end  
 if text:match("^حظر$") and is_mod(msg) and msg.reply_to_message_id_ ~= 0 then
 if not is_creator(msg) and database:get("SNIIPER:lock:ban_and_kick"..bot_id..msg.chat_id_) then 
@@ -2295,7 +2295,7 @@ end
 function ban_by_reply(extra, result, success)
 local hash =  'SNIIPER:'..bot_id..'banned:'..msg.chat_id_
 if ck_mod(result.sender_user_id_, msg.chat_id_) then
-send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 if database:sismember(hash, result.sender_user_id_) then
 tsX000("prore",msg,"☑┇بالفعل تم حظره من المجموعه")
@@ -2319,7 +2319,7 @@ local apba = {string.match(text, "^(حظر) @(.*)$")}
 function ban_by_username(extra, result, success)
 if result.id_ then
 if ck_mod(result.id_, msg.chat_id_) then
-send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر \n🔘┇(مدراء،ادمنيه، مميزين)البوت', 1, 'md')
 else
 database:sadd('SNIIPER:'..bot_id..'banned:'..msg.chat_id_, result.id_)
 texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apba[2] or 'SNIIPERteam')..')\n☑┇تم حظره من المجموعه'
@@ -2340,7 +2340,7 @@ return "tshakke"
 end
 local apba = {string.match(text, "^([Bb][Aa][Nn]) (%d+)$")}
 if ck_mod(apba[2], msg.chat_id_) then
-send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر \n🔘┇(مدراء،ادمنيه،اعضاء،مميزين)البوت', 1, 'md')
 else
 database:sadd('SNIIPER:'..bot_id..'banned:'..msg.chat_id_, apba[2])
 chat_kick(msg.chat_id_, apba[2])  
@@ -2502,23 +2502,23 @@ if text:match("^حظر عام (%d+)$") and tonumber(msg.sender_user_id_) == tonu
 local apbll = {string.match(text, "^(حظر عام) (%d+)$")}
 local hash =  'SNIIPER:'..bot_id..'gbanned:'
 if ck_admin(apbll[2]) then
-send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر عام \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع حظر عام \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 database:sadd(hash, apbll[2])
-tsX000(apbll[2],msg,"🚫┇تم حظره من المجموعات البوت")
+tsX000(apbll[2],msg,"🚫┇تم حظره عام")
 end
 end
 if text:match("^الغاء العام$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) and msg.reply_to_message_id_ then
 function ungban_by_reply(extra, result, success)
 local hash =  'SNIIPER:'..bot_id..'gbanned:'
-tsX000("prore",msg,"🚫┇تم الغاء حظره من المجموعات البوت")
+tsX000("prore",msg,"🚫┇تم الغاء حظره عام")
 database:srem(hash, result.sender_user_id_)
 end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,ungban_by_reply)
 end
 
-if text:match("^الغاء العام @(.*)$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
-local apid = {string.match(text, "^(الغاء العام) @(.*)$")}
+if text:match("^الغاء حظر عام @(.*)$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+local apid = {string.match(text, "^(الغاء حظر عام) @(.*)$")}
 function ungban_by_username(extra, result, success)
 local hash =  'SNIIPER:'..bot_id..'gbanned:'
 if result.id_ then
@@ -2532,21 +2532,21 @@ end
 resolve_username(apid[2],ungban_by_username)
 end
 
-if text:match("^الغاء العام (%d+)$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
-local apbll = {string.match(text, "^(الغاء العام) (%d+)$")}
+if text:match("^الغاء حظر عام (%d+)$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+local apbll = {string.match(text, "^(الغاء حظر عام) (%d+)$")}
 local hash =  'SNIIPER:'..bot_id..'gbanned:'
 database:srem(hash, apbll[2])
-tsX000(apbll[2],msg,"🚫┇تم الغاء حظره من مجموعات البوت")
+tsX000(apbll[2],msg,"🚫┇تم الغاء حظره عام")
 end
 
 if text:match("^كتم عام$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) and msg.reply_to_message_id_ then
 function gmute_by_reply(extra, result, success)
 local hash =  'SNIIPER:'..bot_id..'gmuted:'
 if is_admin(result) then
-send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع كتم عام \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع كتم عام \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 database:sadd(hash, result.sender_user_id_)
-tsX000("prore",msg,"🚫┇تم كتمه من المجموعات البوت")
+tsX000("prore",msg,"🚫┇تم كتمه عام")
 end
 end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,gmute_by_reply)
@@ -2557,7 +2557,7 @@ local apbll = {string.match(text, "^(كتم عام) @(.*)$")}
 function gmute_by_username(extra, result, success)
 if result.id_ then
 if ck_admin(result.id_) then
-send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع كتم عام \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع كتم عام \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 local hash =  'SNIIPER:'..bot_id..'gmuted:'
 texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apbll[2] or 'SNIIPERteam')..')\n🚫┇تم كتمه من المجموعات البوت'
@@ -2575,16 +2575,16 @@ if text:match("^كتم عام (%d+)$") and tonumber(msg.sender_user_id_) == tonu
 local apbll = {string.match(text, "^(كتم عام) (%d+)$")}
 local hash =  'SNIIPER:'..bot_id..'gmuted:'
 if ck_admin(apbll[2]) then
-send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع كتم عام \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع كتم عام \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 database:sadd(hash, apbll[2])
-tsX000(apbll[2],msg,"🚫┇تم كتمه من المجموعات البوت")
+tsX000(apbll[2],msg,"🚫┇تم كتمه عام")
 end
 end
 if text:match("^الغاء كتم العام$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) and msg.reply_to_message_id_ then
 function ungmute_by_reply(extra, result, success)
 local hash =  'SNIIPER:'..bot_id..'gmuted:'
-tsX000("prore",msg,"🚫┇تم الغاء كتمه من المجموعات البوت")
+tsX000("prore",msg,"🚫┇تم الغاء كتمه عام")
 database:srem(hash, result.sender_user_id_)
 end
 getMessage(msg.chat_id_, msg.reply_to_message_id_,ungmute_by_reply)
@@ -2609,14 +2609,14 @@ if text:match("^الغاء كتم العام (%d+)$") and tonumber(msg.sender_us
 local apbll = {string.match(text, "^(الغاء كتم العام) (%d+)$")}
 local hash =  'SNIIPER:'..bot_id..'gmuted:'
 database:srem(hash, apbll[2])
-tsX000(apbll[2],msg,"🚫┇تم الغاء كتمه من المجموعات البوت")
+tsX000(apbll[2],msg,"🚫┇تم الغاء كتمه عام")
 end
 
 if text:match("^كتم$") and is_mod(msg) and msg.reply_to_message_id_ ~= 0 then
 function mute_by_reply(extra, result, success)
 local hash =  'SNIIPER:'..bot_id..'muted:'..msg.chat_id_
 if ck_mod(result.sender_user_id_, msg.chat_id_) then
-send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع كتم \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '❕┇لا تستطيع كتم \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 if database:sismember(hash, result.sender_user_id_) then
 tsX000("prore",msg,"🚫┇بالفعل تم كتمه")
@@ -2633,7 +2633,7 @@ local apsi = {string.match(text, "^(كتم) @(.*)$")}
 function mute_by_username(extra, result, success)
 if result.id_ then
 if ck_mod(result.id_, msg.chat_id_) then
-send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع كتم \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع كتم \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 database:sadd('SNIIPER:'..bot_id..'muted:'..msg.chat_id_, result.id_)
 texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apsi[2] or 'SNIIPERteam')..')\n🚫┇تم كتمه من البوت'
@@ -2693,7 +2693,7 @@ return "tshakke"
 end
 function kick_reply(extra, result, success)
 if ck_mod(result.sender_user_id_, msg.chat_id_) then
-send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع طرد \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع طرد \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 tsX000("prore",msg,"🚫┇تم طرده من المجموعه")
 chat_kick(result.chat_id_, result.sender_user_id_)
@@ -2710,7 +2710,7 @@ local apki = {string.match(text, "^(طرد) @(.*)$")}
 function kick_by_username(extra, result, success)
 if result.id_ then
 if ck_mod(result.id_, msg.chat_id_) then
-send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع طرد \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع طرد \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 texts = '👤┇العضو ~⪼ ['..result.title_..'](t.me/'..(apki[2] or 'SNIIPERteam')..')\n🚫┇تم طرده من المجموعه'
 chat_kick(msg.chat_id_, result.id_)
@@ -2729,7 +2729,7 @@ return "tshakke"
 end
 local apki = {string.match(text, "^(طرد) (%d+)$")}
 if ck_mod(apki[2], msg.chat_id_) then
-send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع طرد \n🔘┇(مدراء،ادمنيه،اعضاء مميزين)البوت', 1, 'md')
+send(msg.chat_id_, msg.id_, 1, '✖┇لا تستطيع طرد \n🔘┇(مدراء،ادمنيه،مميزين)البوت', 1, 'md')
 else
 chat_kick(msg.chat_id_, apki[2])
 tsX000(apki[2],msg,"🚫┇تم طرده من المجموعه")
@@ -2853,10 +2853,10 @@ local a = {string.match(text, "^(تعين عدد الابلاغ) (%d+)$")}
 database:set("tsahke:fel:o:me:"..bot_id..msg.chat_id_,a[2])
 send(msg.chat_id_, msg.id_, 1, "👤┇تم تعين عدد الابلاغ {"..a[2].."}", 1, 'html')
 end
-if text:match("^الاعضاء المميزين") and is_owner(msg) then
+if text:match("^المميزين") and is_owner(msg) then
 local hash =   'SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_
 local list = database:smembers(hash)
-text = "👥┇قائمة الاعضاء المميزين ،\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
+text = "👥┇قائمة المميزين ،\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
 local user_info = database:hgetall('SNIIPER:'..bot_id..'user:'..v)
 if user_info and user_info.username then
@@ -2871,7 +2871,7 @@ text = ""
 end
 end
 if #list == 0 then
-text = "✖┇لايوجد اعضاء مميزين"
+text = "✖┇لايوجد مميزين"
 end
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
@@ -3860,8 +3860,8 @@ send(msg.chat_id_, msg.id_, 1, texts, 1, 'md')
 end
 resolve_username(apmd[2],demote_by_username)
 end  
-if text:match("^حذف مطور (%d+)$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
-local apmd = {string.match(text, "^(حذف مطور) (%d+)$")}
+if text:match("^تنزيل مطور (%d+)$") and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
+local apmd = {string.match(text, "^(تنزيل مطور) (%d+)$")}
 redis:del('SNIIPER:'..bot_id..'sudoo'..apmd[2]..'', 'no')
 redis:srem('SNIIPER:'..bot_id..'dev', apmd[2])
 tsX000(apmd[2],msg,'☑┇ تم تنزيله من مطورين البوت')
@@ -3884,7 +3884,7 @@ t = 'مدير الكروب'
 elseif is_mod(msg) then
 t = 'ادمن للكروب'
 elseif is_vip(msg) then
-t = 'عضو مميز'
+t = 'مميز'
 else
 t = 'عضو فقط'
 end
@@ -3925,9 +3925,9 @@ t = database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_
 elseif is_owner(msg) then
 t = 'مدير الكروب'
 elseif is_mod(msg) then
-t = 'ادمن للكروب'
+t = 'ادمن الكروب'
 elseif is_vip(msg) then
-t = 'عضو مميز'
+t = 'مميز الكروب'
 else
 t = 'عضو فقط'
 end
@@ -4156,11 +4156,11 @@ delete_msg(msg.chat_id_, {[0] = msg.reply_to_message_id_})
 delete_msg(msg.chat_id_, {[0] = msg.id_})
 end
 ----------------------------------------------------------------------------------------------
-if text:match('^تنظيف (%d+)$') and is_owner(msg) then
-local matches = {string.match(text, "^(تنظيف) (%d+)$")}
-if msg.chat_id_:match("^-100") then
-if tonumber(matches[2]) > 100 or tonumber(matches[2]) < 1 then
-pm = '❕┇لا تستطيع حذف اكثر من 100 رساله'
+if text:match('^مسح (%d+)$') and is_owner(msg) then
+local matches = {string.match(text, "^(مسح) (%d+)$")}
+if msg.chat_id_:match("^-200") then
+if tonumber(matches[2]) > 200 or tonumber(matches[2]) < 1 then
+pm = '❕┇لا تستطيع مسح اكثر من 200 رساله'
 send(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
 else
 tdcli_function ({
@@ -4169,7 +4169,7 @@ chat_id_ = msg.chat_id_,
 from_message_id_ = 0,
 offset_ = 0,
 limit_ = tonumber(matches[2])}, delmsg, nil)
-pm ='☑┇تم <b>{'..matches[2]..'}</b> من الرسائل\n🗑┇حذفها'
+pm ='☑┇تم <b>{'..matches[2]..'}</b> من الرسائل\n🗑┇مسحها'
 send(msg.chat_id_, msg.id_, 1, pm, 1, 'html')
 end
 else pm ='❕┇هناك خطاء'
@@ -4298,7 +4298,7 @@ if ts_text then
 function promote_by_reply(extra, result, success)
 if ts_text == "ادمن" then 
 database:sadd('SNIIPER:'..bot_id..'mods:'..msg.chat_id_, result.sender_user_id_)
-elseif ts_text == "عضو مميز" then 
+elseif ts_text == "مميز" then 
 database:sadd('SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_, result.sender_user_id_)
 elseif ts_text == "مدير" then 
 database:sadd('SNIIPER:'..bot_id..'owners:'..msg.chat_id_, result.sender_user_id_)
@@ -4321,7 +4321,7 @@ function promote_by_username(extra, result, success)
 if result.id_ then
 if ts_text == "ادمن" then 
 database:sadd('SNIIPER:'..bot_id..'mods:'..msg.chat_id_, result.id_)
-elseif ts_text == "عضو مميز" then 
+elseif ts_text == "مميز" then 
 database:sadd('SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_, result.id_)
 elseif ts_text == "مدير" then 
 database:sadd('SNIIPER:'..bot_id..'owners:'..msg.chat_id_, result.id_)
@@ -4358,7 +4358,7 @@ if ts_text then
 function demote_by_reply(extra, result, success)
 if ts_text == "ادمن" then 
 database:srem('SNIIPER:'..bot_id..'mods:'..msg.chat_id_, result.sender_user_id_)
-elseif ts_text == "عضو مميز" then 
+elseif ts_text == "مميز" then 
 database:srem('SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_, result.sender_user_id_)
 elseif ts_text == "مدير" then 
 database:srem('SNIIPER:'..bot_id..'owners:'..msg.chat_id_, result.sender_user_id_)
@@ -4377,7 +4377,7 @@ function demote_by_username(extra, result, success)
 if result.id_ then
 if ts_text == "ادمن" then 
 database:srem('SNIIPER:'..bot_id..'mods:'..msg.chat_id_, result.id_)
-elseif ts_text == "عضو مميز" then 
+elseif ts_text == "مميز" then 
 database:srem('SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_, result.id_)
 elseif ts_text == "مدير" then 
 database:srem('SNIIPER:'..bot_id..'owners:'..msg.chat_id_, result.id_)
@@ -4398,7 +4398,7 @@ ts_text = database:get("SNIIPER:all_if:"..apmd[1]..bot_id..msg.chat_id_)
 if ts_text then 
 if ts_text == "ادمن" then 
 database:srem('SNIIPER:'..bot_id..'mods:'..msg.chat_id_, apmd[2])
-elseif ts_text == "عضو مميز" then 
+elseif ts_text == "مميز" then 
 database:srem('SNIIPER:'..bot_id..'vipgp:'..msg.chat_id_, apmd[2])
 elseif ts_text == "مدير" then 
 database:srem('SNIIPER:'..bot_id..'owners:'..msg.chat_id_, apmd[2])
@@ -4495,7 +4495,7 @@ t = 'مدير الكروب'
 elseif is_mod(msg) then
 t = 'ادمن للكروب'
 elseif is_vip(msg) then
-t = 'عضو مميز'
+t = 'مميز الكروب'
 else
 t = 'عضو فقط'
 end
@@ -4503,12 +4503,12 @@ if not database:get('SNIIPER:'..bot_id..'id:mute'..msg.chat_id_) then
 if not database:get('SNIIPER:'..bot_id..'id:photo'..msg.chat_id_) then
 if not database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_) then 
 local keko_text = {
-'ياحلو مين الله جابك🤧',
-"غير صورتك 😪",
-"تخليني♥️",
-"طالع حلو ^_^",
-"ليش مغير صورتك 🤣",
-"منور 😚",
+"رجع صورتك القديمه طالع جنك بسطال",
+"هاي الصوره حلوعاشت ايدك",
+"تخليني襤",
+"ببكن",
+"ليش مغير صورتك ",
+"نورك عمه اعضاء الگروب",
 }
 keko3 = math.random(#keko_text)
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,"📷┇"..keko_text[keko3].."\n👥┇عدد صورك ~⪼ "..all_photo_SNIIPER.."\n🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📨┇رسائلك ~⪼ {"..user_msgs.."}\n📧┇السحكات ~⪼ {"..edit.."}\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ",msg.id_,msg.id_.."")
@@ -4532,9 +4532,9 @@ t = database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_
 elseif is_owner(msg) then
 t = 'مدير الكروب'
 elseif is_mod(msg) then
-t = 'ادمن للكروب'
+t = 'ادمن الكروب'
 elseif is_vip(msg) then
-t = 'عضو مميز'
+t = 'مميز الكروب'
 else
 t = 'عضو فقط'
 end
@@ -4595,7 +4595,7 @@ t = 'مدير الكروب'
 elseif is_mod(msg) then
 t = 'ادمن للكروب'
 elseif is_vip(msg) then
-t = 'عضو مميز'
+t = 'مميز'
 else
 t = 'عضو فقط'
 end
@@ -4754,9 +4754,9 @@ end
 if (text:match("^م1$") or text == "م١") and is_mod(msg) then
 local h1 = redis:get('SNIIPER:'..bot_id..'h1')
 local text =  [[
-📮┇ اوامر حمايه المجموعه
+┇ اوامر حمايه المجموعه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-⏺┇قفل/فتح + الاوامر الادناه
+⚙┇قفل/فتح + الاوامر الادناه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🔐┇الروابط
 🔐┇المعرف
@@ -4786,7 +4786,7 @@ local text =  [[
 🔐┇التكرار
 🔐┇الكلايش
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ @SNIIPERTEAM
+📡┇Ch ~⪼ @SNIIPERTIME
 ]]
 send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'html')
 end
@@ -4808,20 +4808,20 @@ local h2 = redis:get('SNIIPER:'..bot_id..'h2')
 local text =  [[
 🥈┇اوامر الادمنيه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🚫┇كتم
-🚷┇حظر
-🚷┇طرد
-🚫┇منع + الكلمه
-⏺┇الغاء حظر
-⏺┇الغاء كتم
-⏺┇الغاء منع + الكلمه
-📋┇المحظورين  
-📋┇المكتومين
-📋┇قائمه المنع
+┇كتم
+⛔┇حظر
+┇طرد
+┇منع + الكلمه
+⛔┇الغاء حظر
+┇الغاء كتم
+┇الغاء منع + الكلمه
+⛔┇المحظورين  
+┇المكتومين
+┇قائمه المنع
 
-ℹ️┇تثبيت
-⏺┇الغاء تثبيت
-📄┇الاعدادات
+✔┇تثبيت
+❌┇الغاء تثبيت
+⚙┇الاعدادات
 
 🗳┇الرابط
 📃┇القوانين
@@ -4835,12 +4835,12 @@ local text =  [[
 📲┇الحساب + ايدي
 📣┇كرر + الكلمه
 
-💭┇ايدي
-💭┇جهاتي
-💭┇سحكاتي
-💭┇رسائلي
-💭┇ابلاغ
-💭┇عدد الكروب
+♠┇ايدي
+♠┇جهاتي
+♠┇سحكاتي
+♠┇رسائلي
+♠┇ابلاغ
+♠┇عدد الكروب
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🔘┇وضع + الاوامر الادناه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -4852,15 +4852,15 @@ local text =  [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🗑┇مسح + الاوامر الادناه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📮┇قائمه المنع
-📮┇المحظورين
-📮┇المكتومين
-📮┇القوانين
-📮┇البوتات
-📮┇الصوره
+┇قائمه المنع
+⛔┇المحظورين
+┇المكتومين
+┇القوانين
+┇البوتات
+┇الصوره
 📮┇الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ @SNIIPERTEAM
+📡┇Ch ~⪼ @SNIIPERTIME
 ]]
 send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'html')
 end
@@ -4890,12 +4890,12 @@ local text =  [[
 ↕️┇رفع/تنزيل ادمن
 ↕️┇رفع/تنزيل عضو مميز
 
-💬┇تفعيل/تعطيل الايدي بالصوره
-💬┇تفعيل/تعطيل الايدي
-💬┇تفعيل/تعطيل ردود المطور
-💬┇تفعيل/تعطيل ردود المدير
-💬┇تفعيل/تعطيل التثبيت
-💬┇تفعيل/تعطيل اطردني
+┇تفعيل/تعطيل الايدي بالصوره
+┇تفعيل/تعطيل الايدي
+┇تفعيل/تعطيل ردود المطور
+┇تفعيل/تعطيل ردود المدير
+┇تفعيل/تعطيل التثبيت
+┇تفعيل/تعطيل اطردني
 
 🖇┇رفع الادمنيه
 🖇┇اضف/حذف رد
@@ -4907,7 +4907,7 @@ local text =  [[
 🗑┇تنظيف + عدد
 🗑┇مسح الادمنيه
 🗑┇مسح ردود المدير
-🗑┇مسح الاعضاء المميزين
+🗑┇مسح المميزين
 🗑┇تنظيف قائمه المحظورين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🏅┇اوامر المنشئين
@@ -4925,7 +4925,7 @@ local text =  [[
 🚸┇تفعيل/تعطيل الطرد/الحظر
 💭┇اضف/حذف امر + اسم الامر
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~⪼ @SNIIPERTEAM
+📡┇Ch ~⪼ @SNIIPERTIME
 ]]
 send(msg.chat_id_, msg.id_, 1, (h3 or text), 1, 'html')
 end
@@ -4947,9 +4947,9 @@ end
 if (text:match("^م4$") or text == "م٤") and is_sudo(msg) then
 local h4 = redis:get('SNIIPER:'..bot_id..'h4')
 local text =  [[
-🎖┇اوامر المطور
+┇اوامر المطور
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-✳️┇تفعيل/تعطيل
+┇تفعيل/تعطيل
 ⏺┇تفعيل/تعطيل المغادره
 ⏺┇تفعيل/تعطيل الاذاعه
 ⏺┇تفعيل/تعطيل التفعيل التلقائي
@@ -4971,10 +4971,10 @@ local text =  [[
 📋┇روابط الكروبات
 
 
-🚫┇حظر عام
-⏺┇الغاء العام
-🚫┇كتم عام
-⏺┇الغاء كتم العام
+⛔┇حظر عام
+⏺┇الغاء حظر عام
+┇كتم عام
+⏺┇الغاء كتم عام
 📋┇قائمه العام
 📋┇المكتومين عام
 
@@ -5002,35 +5002,35 @@ local text =  [[
 🗂┇اضف/حذف/جلب ملف + اسم الملف
 🗂┇مسح جميع الملفات
 
-🗯┇تغير نص الانلاين + النص
-🗯┇تغير رابط الانلاين + الرابط
-🗯┇تفعيل/تعطيل الانلاين
+┇تغير نص الانلاين + النص
+┇تغير رابط الانلاين + الرابط
+┇تفعيل/تعطيل الانلاين
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-‏📡┇Ch ~⪼ @SNIIPERTEAM
+‏📡┇Ch ~⪼ @SNIIPERTIME
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
 end
 if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
 local text =  [[
-👋┇اهلا بك في سورس تشاكي 
+👋┇اهلا بك في سورس القناص 
 
 🌐┇<strong>SNIIPER TEAM</strong>
 
-🦁┇<a href="https://telegram.me/SNIIPERTEAM">قناه السورس</a>
+🦁┇<a href="https://telegram.me/SNIIPERTIME">قناه السورس</a>
 📜┇<a href="https://telegram.me/SNIIPER_DEV">قناه شروحات سورس</a>
 📁┇<a href="https://telegram.me/SNIIPERfiles">قناه ملفات السورس</a>
 
 🔎┇<a href="https://t.me/SNIIPER_DEV/227">طريقه التنصيب</a>
 
-📮┇<a href="t.me/TSHELPBOT">لـ تواصل </a> 
+📮┇<a href="t.me/K_111BOT">لـ تواصل </a> 
 ]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
 if text:match("^اريد رابط حذف$") or text:match("^رابط حذف$") or text:match("^رابط الحذف$") or text:match("^الرابط حذف$") or text:match("^اريد رابط الحذف$") then
 local text =  [[
 🗑┇رابط حذف التلي ، ⬇
-‼┇احذف ولا ترجع عيش حياتك'
+‼┇قبل متحذف فكر ولتسرع بالتوفيق حياتي♥'
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🔎┇<a href="https://telegram.org/deactivate">اضغط هنا للحذف الحساب" </a>
 ]]
