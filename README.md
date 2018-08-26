@@ -5,8 +5,7 @@ ________________________________________________________________________________
 
 كود تنصيب سورس القناص
 ------------
-بوابة استنساخ``` https://github.com/KASPERZAHRAA/SNIIP
-&& cd SNIIPER && chmod + x install.sh &&. / install.sh```
+```git clone https://github.com/KASPERZAHRAA/SNIIPER && cd SNIIPER && chmod +x install.sh && ./install.sh```
 
 ______________________________________________________________________________________________________________________
 
