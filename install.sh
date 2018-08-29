@@ -233,7 +233,7 @@ sudo apt-get install libexpat1-dev  -y
 reset
 echo -e "\e[38;5;77m     »»     Welcome to install SNIIPER     ««\e[0m"
 echo -e "\e[38;5;77m       »»     Install SNIIPER [100%]     ««\e[0m"
-echo -e "\27[34m     »»     SNIIPER Channel ; @SNIIPERTeam     ««\e[0m"
+echo -e "\27[34m     »»     SNIIPER Channel ; @SNIIPERTIME     ««\e[0m"
 chmod +x tg
 chmod +x ts
 chmod +x SNIIPER
