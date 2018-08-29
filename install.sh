@@ -219,7 +219,7 @@ reset
 echo -e "\e[38;5;77m     »»     Welcome to install SNIIPER     ««\e[0m"
 echo -e "\e[38;5;77m       »»     Install SNIIPER [91%]     ««\e[0m"
 cd ..
-cd SNIIPER
+cd JOKER
 rm -rf "luarocks-2.2.2"
 wget "https://valtman.name/files/telegram-cli-1222"
 reset
@@ -236,5 +236,5 @@ echo -e "\e[38;5;77m       »»     Install SNIIPER [100%]     ««\e[0m"
 echo -e "\27[34m     »»     SNIIPER Channel ; @SNIIPERTIME     ««\e[0m"
 chmod +x tg
 chmod +x ts
-chmod +x SNIIPER
+chmod +x JOKER
 ./ts
