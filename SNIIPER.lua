@@ -1549,8 +1549,8 @@ delete_msg(msg.chat_id_,{[0] = msg.id_})
 return "stop"
 end
 end
-if text and text:match("[\216-\219][\128-\191]") then
-if database:get("lock_ar:SNIIPER"..msg.chat_id_..bot_id) then
+if text and text:match("[گکپیبخویپگمچرزاسیپثظطژزیقنیکقصضش]") then
+if database:get("lock_pe:SNIIPER"..msg.chat_id_..bot_id) then
 delete_msg(msg.chat_id_,{[0] = msg.id_})
 return "stop"
 end
