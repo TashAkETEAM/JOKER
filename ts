@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-cd SNIIPER
-screen -S SNIIPER -X kill
-screen -S SNIIPER ./SNIIPER
+cd JOKER
+screen -S JOKER -X kill
+screen -S JOKER ./JOKER
