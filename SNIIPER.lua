@@ -5,7 +5,7 @@ ____  __    _  •   _ ____  _______  _____
  __)  | | \ \ || | | |     | |__|    ||\\
 |____/|_|  \__||_| |_|     | |_____  || \\
                            |_|_____| 
-           CH > @SNIIPER_TIME
+           CH > @SNIIPERTIME
 --]]
 --------------------------------------
 serpent = require('serpent')
@@ -449,7 +449,7 @@ local channel_user_ts = database:get("channel_user_ts"..bot_id)
 keyboard = {}
 keyboard.inline_keyboard = {
 {
-{text = ''..(channel_ts or "SNIIPER TEAM")..'', url=''..(channel_user_ts or 't.me/SNIIPERTEAM')..''},
+{text = ''..(channel_ts or "SNIIPERTIME")..'', url=''..(channel_user_ts or 't.me/SNIIPERTIME')..''},
 },
 }
 local keko = "https://api.telegram.org/bot" ..token.. '/sendMessage?chat_id=' .. chat_id
