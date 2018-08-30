@@ -4736,25 +4736,25 @@ local text =  [[
 👨🏻‍💼¦ <م3> لعرض اوامر المدراء
 📮¦ <م4> لعرض اوامر المطور
 ————————————
-‏📡┇Ch --⪼ @SNIIPERTIME
+‏📡┇Ch --⪼ @llJOKERll
 ]]
 send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'html')
 end
 if (text and text == 'تغير امر م1') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '📥┇الان يمكنك ارسال الكليشه  ليتم حفظها', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'h11'..msg.sender_user_id_..'', 'msg')
+redis:set('JOKER:'..bot_id..'h11'..msg.sender_user_id_..'', 'msg')
 return false end
 if text:match("^(.*)$") then
-local keko2 = redis:get('SNIIPER:'..bot_id..'h11'..msg.sender_user_id_..'')
+local keko2 = redis:get('JOKER:'..bot_id..'h11'..msg.sender_user_id_..'')
 if keko2 == 'msg' then
 send(msg.chat_id_, msg.id_, 1, '√┇تم حفظ الكليشه يمكنك اظهارها بارسال الامر', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'h11'..msg.sender_user_id_..'', 'no')
-redis:set('SNIIPER:'..bot_id..'h1', text)
+redis:set('JOKER:'..bot_id..'h11'..msg.sender_user_id_..'', 'no')
+redis:set('JOKER:'..bot_id..'h1', text)
 send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
 return false end
 end
 if (text:match("^م1$") or text == "م١") and is_mod(msg) then
-local h1 = redis:get('SNIIPER:'..bot_id..'h1')
+local h1 = redis:get('JOKER:'..bot_id..'h1')
 local text =  [[
 اوامر الحمايه🛡
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
@@ -4786,26 +4786,26 @@ local text =  [[
 ♠️┇قفل / فتح 《》 التكرار
 ♠️┇قفل / فتح 《》 الكلايش
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-CH:- @SNIIPERTIME
+CH:- @llJOKERll
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'html')
 end
 if (text and text == 'تغير امر م2') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '📥┇الان يمكنك ارسال الكليشه  ليتم حفظها', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'h22'..msg.sender_user_id_..'', 'msg')
+redis:set('JOKER:'..bot_id..'h22'..msg.sender_user_id_..'', 'msg')
 return false end
 if text:match("^(.*)$") then
-local keko2 = redis:get('SNIIPER:'..bot_id..'h22'..msg.sender_user_id_..'')
+local keko2 = redis:get('JOKER:'..bot_id..'h22'..msg.sender_user_id_..'')
 if keko2 == 'msg' then
 send(msg.chat_id_, msg.id_, 1, '√┇تم حفظ الكليشه يمكنك اظهارها بارسال الامر', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'h22'..msg.sender_user_id_..'', 'no')
-redis:set('SNIIPER:'..bot_id..'h2', text)
+redis:set('JOKER:'..bot_id..'h22'..msg.sender_user_id_..'', 'no')
+redis:set('JOKER:'..bot_id..'h2', text)
 send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
 return false end
 end
 if (text:match("^م2$") or text == "م٢") and is_mod(msg) then
-local h2 = redis:get('SNIIPER:'..bot_id..'h2')
+local h2 = redis:get('JOKER:'..bot_id..'h2')
 local text =  [[
 👮┇اوامر الادمنيه
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -4861,21 +4861,21 @@ local text =  [[
 🔘┇الصوره
 📮┇الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~» @SNIIPERTIME
+📡┇Ch ~» @llJOKERll
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'html')
 end
 if (text and text == 'تغير امر م3') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '📥┇الان يمكنك ارسال الكليشه  ليتم حفظها', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'h33'..msg.sender_user_id_..'', 'msg')
+redis:set('JOKER:'..bot_id..'h33'..msg.sender_user_id_..'', 'msg')
 return false end
 if text:match("^(.*)$") then
-local keko2 = redis:get('SNIIPER:'..bot_id..'h33'..msg.sender_user_id_..'')
+local keko2 = redis:get('JOKER:'..bot_id..'h33'..msg.sender_user_id_..'')
 if keko2 == 'msg' then
 send(msg.chat_id_, msg.id_, 1, '√┇تم حفظ الكليشه يمكنك اظهارها بارسال الامر', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'h33'..msg.sender_user_id_..'', 'no')
-redis:set('SNIIPER:'..bot_id..'h3', text)
+redis:set('JOKER:'..bot_id..'h33'..msg.sender_user_id_..'', 'no')
+redis:set('JOKER:'..bot_id..'h3', text)
 send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
 return false end
 end
@@ -4915,28 +4915,28 @@ local text =  [[
 ♦┇تفعيل/تعطيل  《》الحظر
 ♦┇تفعيل/تعطيل  《》الطرد 
 ﹎﹎﹎﹎﹎﹎﹎﹎
-Ch ~» @SNIIPERTIME
+Ch ~» @llJOKERll
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h3 or text), 1, 'html')
 end
 if (text and text == 'تغير امر م4') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '📥┇الان يمكنك ارسال الكليشه  ليتم حفظها', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'h44'..msg.sender_user_id_..'', 'msg')
+redis:set('JOKER:'..bot_id..'h44'..msg.sender_user_id_..'', 'msg')
 return false end
 if text:match("^(.*)$") then
-local keko2 = redis:get('SNIIPER:'..bot_id..'h44'..msg.sender_user_id_..'')
+local keko2 = redis:get('JOKER:'..bot_id..'h44'..msg.sender_user_id_..'')
 if keko2 == 'msg' then
 send(msg.chat_id_, msg.id_, 1, '√┇تم حفظ الكليشه يمكنك اظهارها بارسال الامر', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'h44'..msg.sender_user_id_..'', 'no')
-redis:set('SNIIPER:'..bot_id..'h4', text)
+redis:set('JOKER:'..bot_id..'h44'..msg.sender_user_id_..'', 'no')
+redis:set('JOKER:'..bot_id..'h4', text)
 send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
 return
 false
 end
 end
 if (text:match("^م4$") or text == "م٤") and is_sudo(msg) then
-local h4 = redis:get('SNIIPER:'..bot_id..'h4')
+local h4 = redis:get('JOKER:'..bot_id..'h4')
 local text =  [[
 👨‍🎤┇اوامر المطورين
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
@@ -4982,7 +4982,7 @@ local text =  [[
 ♣️┇تغير رابط الانلاين+الرابط
 ♣️┇تفعيل《》تعطيل/الانلاين
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-CH:- @SNIIPERTIME
+CH:- @llJOKERll
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
@@ -4991,16 +4991,16 @@ if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^
 local text =  [[
 🤚🏻┇اهلا بك في سورس القناص 
 
-🌐┇<strong>SNIIPER TEAM</strong>
+🌐┇<strong>JOKER TEAM</strong>
 
-🖥┇<a href="https://telegram.me/SNIIPERTIME">قناه السورس</a>
-♠┇<a href="https://telegram.me/SNIIPER_DEV">قناه شروحات سورس</a>
-📁┇<a href="https://telegram.me/SNIIPERfiles">قناه ملفات السورس</a>
+🖥┇<a href="https://telegram.me/llJOKERll">قناه السورس</a>
+♠┇<a href="https://telegram.me/JOKER_DEV">قناه شروحات سورس</a>
+📁┇<a href="https://telegram.me/JOKERFILES">قناه ملفات السورس</a>
 
-🔎┇<a href="https://t.me/SNIIPER_DEV/227">طريقه التنصيب</a>
+🔎┇<a href="https://t.me/JOKER_DEV/227">طريقه التنصيب</a>
 
-📮┇<a href="t.me/ii8ili">لـ تواصل </a> 
-📮┇<a href="t.me/RRR_RP">2لـ تواصل </a> 
+📮┇<a href="t.me/LO_RD">لـ تواصل </a> 
+📮┇<a href="t.me/TH3LEDR">2لـ تواصل </a> 
 ]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
@@ -5018,26 +5018,26 @@ end
 function tdcli_update_callback(data)
 local chat = {}
 if (data.ID == "UpdateNewMessage") then
-local Data_SNIIPER = data
+local Data_JOKER = data
 msg = data.message_
 text = msg.content_.text_
-if database:get('SNIIPER:'..bot_id.."charge:"..msg.chat_id_) then
+if database:get('JOKER:'..bot_id.."charge:"..msg.chat_id_) then
 if (not is_mod(msg) and not is_vip(msg)) then 
 print("»» is member "..msg.sender_user_id_) 
 if is_muted(msg.sender_user_id_, msg.chat_id_) then
 delete_msg(msg.chat_id_,{[0] = msg.id_})
-return "SNIIPER"
+return "JOKER"
 end
 z_SNIIPER = TSCheckMsg(msg)
 if z_SNIIPER and z_SNIIPER == "stop" then 
-if database:get("lock_lllll:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_lllll:JOKER"..msg.chat_id_..bot_id) then
 local hash = 'flood:max:'..bot_id..msg.chat_id_
 if not database:get(hash) then
 floodMax = 10
 else
 floodMax = tonumber(database:get(hash))
 end
-local hash = 'SNIIPER:'..bot_id..'flood:time:'..msg.chat_id_
+local hash = 'JOKER:'..bot_id..'flood:time:'..msg.chat_id_
 if not database:get(hash) then
 floodTime = 1
 else
@@ -5062,19 +5062,19 @@ local chat = msg.chat_id_
 user_id = msg.sender_user_id_
 o = database:get("tsahke:spam:lock:"..os.date("%x")..bot_id..msg.chat_id_)
 if (o and (tonumber(o) >= 5)) then
-database:set("lock_media:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_audeo:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_video:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_photo:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_stecker:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_voice:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_gif:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_note:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_word:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_mark:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_link:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set("lock_new:SNIIPER"..msg.chat_id_..bot_id,"ok")
-database:set('SNIIPER:'..bot_id..'get:photo'..msg.chat_id_,true)
+database:set("lock_media:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_audeo:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_video:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_photo:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_stecker:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_voice:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_gif:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_note:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_word:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_mark:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_link:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set("lock_new:JOKER"..msg.chat_id_..bot_id,"ok")
+database:set('JOKER:'..bot_id..'get:photo'..msg.chat_id_,true)
 send(msg.chat_id_, 0, 1, '⚠️┇تم كشف عمليه تخريب في المجموعة \n‼️┇وتم قفل الميديا وسيتم طرد جميع الاشخاص الذين يقومون بعمل تكرار', 1, 'md')
 else
 send(msg.chat_id_, msg.id_, 1, '📟┇الايدي ~»*('..msg.sender_user_id_..')* \n❕┇قمت بعمل تكرار للرسائل المحدده\n√┇وتم كتمك في المجموعه\n', 1, 'md')
@@ -5083,7 +5083,7 @@ if (o and (tonumber(o) > 5)) then
 chat_kick(msg.chat_id_, msg.sender_user_id_)
 end
 database:incr("tsahke:spam:lock:"..os.date("%x")..bot_id..msg.chat_id_)
-database:sadd('SNIIPER:'..bot_id..'muted:'..msg.chat_id_, msg.sender_user_id_)
+database:sadd('JOKER:'..bot_id..'muted:'..msg.chat_id_, msg.sender_user_id_)
 end
 end
 database:setex(hash, floodTime, msgs+1)
@@ -5091,12 +5091,12 @@ end
 end
 end
 end
-return "SNIIPER"
+return "JOKER"
 end
 end
 if data.message_.content_.text_ then   
-if database:get("SNIIPER:edit:text:su:new2:"..bot_id..data.message_.chat_id_..data.message_.content_.text_) then
-local SNIIPER_edit_text = database:get("SNIIPER:edit:text:su:new2:"..bot_id..data.message_.chat_id_..data.message_.content_.text_)
+if database:get("JOKER:edit:text:su:new2:"..bot_id..data.message_.chat_id_..data.message_.content_.text_) then
+local SNIIPER_edit_text = database:get("JOKER:edit:text:su:new2:"..bot_id..data.message_.chat_id_..data.message_.content_.text_)
 if SNIIPER_edit_text then
 data.message_.content_.text_ = SNIIPER_edit_text
 end
@@ -5105,49 +5105,49 @@ end
 local msg = data.message_
 text = msg.content_.text_
 if is_sudo(msg) then 
-if database:get("SNIIPER:set_if_bc_new:"..bot_id..msg.sender_user_id_) then 
-database:del("SNIIPER:set_if_bc_new:"..bot_id..msg.sender_user_id_)
-local pro = database:scard('SNIIPER:'..bot_id..'pro:groups') or 0
+if database:get("JOKER:set_if_bc_new:"..bot_id..msg.sender_user_id_) then 
+database:del("JOKER:set_if_bc_new:"..bot_id..msg.sender_user_id_)
+local pro = database:scard('JOKER:'..bot_id..'pro:groups') or 0
 if text then 
-local gpss = database:smembers( 'SNIIPER:'..bot_id.."groups") or 0
+local gpss = database:smembers( 'JOKER:'..bot_id.."groups") or 0
 for i=1, #gpss do
-if not database:sismember('SNIIPER:'..bot_id..'pro:groups', gpss[i]) then
+if not database:sismember('JOKER:'..bot_id..'pro:groups', gpss[i]) then
 send(gpss[i], 0, 1, text, 1, 'html')		
 end					
 end
 end
 if (data.message_.content_.sticker_) then 
-gpss = database:smembers( 'SNIIPER:'..bot_id.."groups") or 0
+gpss = database:smembers( 'JOKER:'..bot_id.."groups") or 0
 for i=1, #gpss do
-if not database:sismember('SNIIPER:'..bot_id..'pro:groups', gpss[i]) then
+if not database:sismember('JOKER:'..bot_id..'pro:groups', gpss[i]) then
 tdcli.sendSticker(gpss[i], 0,0, 1, nil, data.message_.content_.sticker_.sticker_.persistent_id_)
 end
 end
 elseif (data.message_.content_.voice_) then 
-gpss = database:smembers( 'SNIIPER:'..bot_id.."groups") or 0
+gpss = database:smembers( 'JOKER:'..bot_id.."groups") or 0
 for i=1, #gpss do
-if not database:sismember('SNIIPER:'..bot_id..'pro:groups', gpss[i]) then
+if not database:sismember('JOKER:'..bot_id..'pro:groups', gpss[i]) then
 tdcli.sendVoice(gpss[i], 0,0, 1, nil, data.message_.content_.voice_.voice_.persistent_id_)
 end
 end
 elseif (data.message_.content_.video_) then 
-gpss = database:smembers( 'SNIIPER:'..bot_id.."groups") or 0
+gpss = database:smembers( 'JOKER:'..bot_id.."groups") or 0
 for i=1, #gpss do
-if not database:sismember('SNIIPER:'..bot_id..'pro:groups', gpss[i]) then
+if not database:sismember('JOKER:'..bot_id..'pro:groups', gpss[i]) then
 tdcli.sendVideo(gpss[i], 0,0, 1, nil, data.message_.content_.video_.video_.persistent_id_)
 end
 end
 elseif (data.message_.content_.animation_) then 
-gpss = database:smembers( 'SNIIPER:'..bot_id.."groups") or 0
+gpss = database:smembers( 'JOKER:'..bot_id.."groups") or 0
 for i=1, #gpss do
-if not database:sismember('SNIIPER:'..bot_id..'pro:groups', gpss[i]) then
+if not database:sismember('JOKER:'..bot_id..'pro:groups', gpss[i]) then
 tdcli.sendDocument(gpss[i], 0,0, 1, nil, data.message_.content_.animation_.animation_.persistent_id_)
 end
 end
 elseif (data.message_.content_.document_) then
-gpss = database:smembers( 'SNIIPER:'..bot_id.."groups") or 0
+gpss = database:smembers( 'JOKER:'..bot_id.."groups") or 0
 for i=1, #gpss do
-if not database:sismember('SNIIPER:'..bot_id..'pro:groups', gpss[i]) then
+if not database:sismember('JOKER:'..bot_id..'pro:groups', gpss[i]) then
 tdcli.sendDocument(gpss[i], 0,0, 1, nil, data.message_.content_.document_.document_.persistent_id_)
 end
 end
@@ -5165,9 +5165,9 @@ end
 if data.message_.content_.photo_.sizes_[3] then
 id_keko = data.message_.content_.photo_.sizes_[3].photo_.persistent_id_
 end
-gpss = database:smembers( 'SNIIPER:'..bot_id.."groups") or 0
+gpss = database:smembers( 'JOKER:'..bot_id.."groups") or 0
 for i=1, #gpss do
-if not database:sismember('SNIIPER:'..bot_id..'pro:groups', gpss[i]) then
+if not database:sismember('JOKER:'..bot_id..'pro:groups', gpss[i]) then
 tdcli.sendPhoto(gpss[i], 0, 0, 1, nil, id_keko,(msg.content_.caption_ or " "))
 end					
 end
@@ -5176,65 +5176,65 @@ gpss = database:smembers( 'SNIIPER:'..bot_id.."groups") or 0
 send(msg.chat_id_, msg.id_, 1, '√┇تم نشر الرساله في {'..(#gpss - pro)..'} مجموعه ', 1, 'md')
 end
 end
-local keko1 = redis:get('SNIIPER:'..bot_id..'keko1'..msg.sender_user_id_..''..msg.chat_id_..'')
+local keko1 = redis:get('JOKER:'..bot_id..'keko1'..msg.sender_user_id_..''..msg.chat_id_..'')
 if keko1 == 're' then
-local keko2 = redis:get('SNIIPER:'..bot_id..'msg'..msg.sender_user_id_..''..msg.chat_id_..'')
+local keko2 = redis:get('JOKER:'..bot_id..'msg'..msg.sender_user_id_..''..msg.chat_id_..'')
 if text then 
-redis:set('SNIIPER:'..bot_id..'keko'..keko2..''..msg.chat_id_..'', text)
+redis:set('JOKER:'..bot_id..'keko'..keko2..''..msg.chat_id_..'', text)
 elseif (data.message_.content_.sticker_) then 
-redis:set('SNIIPER:'..bot_id..':sticker:'..keko2..''..msg.chat_id_..'', data.message_.content_.sticker_.sticker_.persistent_id_)
+redis:set('JOKER:'..bot_id..':sticker:'..keko2..''..msg.chat_id_..'', data.message_.content_.sticker_.sticker_.persistent_id_)
 elseif (data.message_.content_.voice_) then 
-redis:set('SNIIPER:'..bot_id..':voice:'..keko2..''..msg.chat_id_..'', data.message_.content_.voice_.voice_.persistent_id_)
+redis:set('JOKER:'..bot_id..':voice:'..keko2..''..msg.chat_id_..'', data.message_.content_.voice_.voice_.persistent_id_)
 elseif (data.message_.content_.video_) then 
-redis:set('SNIIPER:'..bot_id..':video:'..keko2..''..msg.chat_id_..'', data.message_.content_.video_.video_.persistent_id_)
+redis:set('JOKER:'..bot_id..':video:'..keko2..''..msg.chat_id_..'', data.message_.content_.video_.video_.persistent_id_)
 elseif (data.message_.content_.animation_) then 
-redis:set('SNIIPER:'..bot_id..':gif:'..keko2..''..msg.chat_id_..'', data.message_.content_.animation_.animation_.persistent_id_)
+redis:set('JOKER:'..bot_id..':gif:'..keko2..''..msg.chat_id_..'', data.message_.content_.animation_.animation_.persistent_id_)
 elseif (data.message_.content_.document_) then
-redis:set('SNIIPER:'..bot_id..':file:'..keko2..''..msg.chat_id_..'', data.message_.content_.document_.document_.persistent_id_)
+redis:set('JOKER:'..bot_id..':file:'..keko2..''..msg.chat_id_..'', data.message_.content_.document_.document_.persistent_id_)
 else
 end -- end if text 
-redis:sadd('SNIIPER:'..bot_id..'kekore'..msg.chat_id_..'', keko2)
+redis:sadd('JOKER:'..bot_id..'kekore'..msg.chat_id_..'', keko2)
 send(msg.chat_id_, msg.id_, 1, "√┇تم حفظ الرد", 1, 'md')
-redis:set('SNIIPER:'..bot_id..'keko1'..msg.sender_user_id_..''..msg.chat_id_..'', 'no')
+redis:set('JOKER:'..bot_id..'keko1'..msg.sender_user_id_..''..msg.chat_id_..'', 'no')
 end
-local keko1 = redis:get('SNIIPER:'..bot_id..'keko1'..msg.sender_user_id_..'')
+local keko1 = redis:get('JOKER:'..bot_id..'keko1'..msg.sender_user_id_..'')
 if keko1 == 're' then
-local keko2 = redis:get('SNIIPER:'..bot_id..'msg'..msg.sender_user_id_..'')
+local keko2 = redis:get('JOKER:'..bot_id..'msg'..msg.sender_user_id_..'')
 if text then 
-redis:set('SNIIPER:'..bot_id..'keko'..keko2..'', text)
+redis:set('JOKER:'..bot_id..'keko'..keko2..'', text)
 elseif (msg.content_.sticker_) then 
-redis:set('SNIIPER:'..bot_id..':sticker:'..keko2, msg.content_.sticker_.sticker_.persistent_id_)
+redis:set('JOKER:'..bot_id..':sticker:'..keko2, msg.content_.sticker_.sticker_.persistent_id_)
 elseif (msg.content_.voice_) then 
-redis:set('SNIIPER:'..bot_id..':voice:'..keko2, msg.content_.voice_.voice_.persistent_id_)
+redis:set('JOKER:'..bot_id..':voice:'..keko2, msg.content_.voice_.voice_.persistent_id_)
 elseif (msg.content_.video_) then 
-redis:set('SNIIPER:'..bot_id..':video:'..keko2, msg.content_.video_.video_.persistent_id_)
+redis:set('JOKER:'..bot_id..':video:'..keko2, msg.content_.video_.video_.persistent_id_)
 elseif (msg..content_.animation_) then 
-redis:set('SNIIPER:'..bot_id..':gif:'..keko2, data.message_.content_.animation_.animation_.persistent_id_)
+redis:set('JOKER:'..bot_id..':gif:'..keko2, data.message_.content_.animation_.animation_.persistent_id_)
 elseif (msg.content_.document_) then
-redis:set('SNIIPER:'..bot_id..':file:'..keko2, msg.content_.document_.document_.persistent_id_)
+redis:set('JOKER:'..bot_id..':file:'..keko2, msg.content_.document_.document_.persistent_id_)
 end
-redis:sadd('SNIIPER:'..bot_id..'kekoresudo', keko2)
+redis:sadd('JOKER:'..bot_id..'kekoresudo', keko2)
 send(msg.chat_id_, msg.id_, 1, "√┇تم حفظ الرد", 1, 'md')
-redis:set('SNIIPER:'..bot_id..'keko1'..msg.sender_user_id_..'', 'no')
+redis:set('JOKER:'..bot_id..'keko1'..msg.sender_user_id_..'', 'no')
 end
---         »»                 Run SNIIPER                         ««              --
+--         »»                 Run JOKER                         ««              --
 if is_mod(msg) then TSlocks(msg) print("\27[1;34m»» is mod "..msg.sender_user_id_.."\27[m") end
 TSall(msg,data)
 function check_username(extra,result,success)
 local username = (result.username_ or '')
-local svuser = 'SNIIPER:'..bot_id..'user:'..result.id_
+local svuser = 'JOKER:'..bot_id..'user:'..result.id_
 if username then
 database:hset(svuser, 'username', username)
 end
 end
 getUser(msg.sender_user_id_,check_username)
 if msg.content_.ID == "MessageChatAddMembers" then
-database:incr('SNIIPER:'..bot_id..'user:add'..msg.chat_id_..':'..msg.sender_user_id_)
+database:incr('JOKER:'..bot_id..'user:add'..msg.chat_id_..':'..msg.sender_user_id_)
 end
 if msg.content_.ID == "MessageChatJoinByLink" then
 function get_welcome(extra,result,success)
-if database:get('SNIIPER:'..bot_id..'welcome:'..msg.chat_id_) then
-text = database:get('SNIIPER:'..bot_id..'welcome:'..msg.chat_id_)
+if database:get('JOKER:'..bot_id..'welcome:'..msg.chat_id_) then
+text = database:get('JOKER:'..bot_id..'welcome:'..msg.chat_id_)
 else
 text = '👋🏻┇هلا وغلا  ؛ {fr}\n🙋🏼‍♂️┇نورك مشعشع الگروب @{us}'
 end
@@ -5243,12 +5243,12 @@ local text = text:gsub('{ls}',(result.last_name_ or 'لا يوجد'))
 local text = text:gsub('{us}',(result.username_ or 'لا يوجد'))
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
-if database:get('SNIIPER:'..bot_id.."welcome"..msg.chat_id_) then
+if database:get('JOKER:'..bot_id.."welcome"..msg.chat_id_) then
 getUser(msg.sender_user_id_,get_welcome)
 end end
 if msg.content_.ID == "MessagePinMessage" then
-if database:get('SNIIPER:'..bot_id..'pinnedmsg'..msg.chat_id_) and database:get("lock_pin:SNIIPER"..msg.chat_id_..bot_id) then
-local pin_id = database:get('SNIIPER:'..bot_id..'pinnedmsg'..msg.chat_id_)
+if database:get('JOKER:'..bot_id..'pinnedmsg'..msg.chat_id_) and database:get("lock_pin:JOKER"..msg.chat_id_..bot_id) then
+local pin_id = database:get('JOKER:'..bot_id..'pinnedmsg'..msg.chat_id_)
 pin(msg.chat_id_,pin_id,0)
 end
 end
@@ -5279,7 +5279,7 @@ end
 local url_keko3 = 'https://api.telegram.org/bot' .. token .. '/getfile?file_id='..id_keko
 local keko3 = https.request(url_keko3)
 local keko6 = JSON.decode(keko3)
-local photo_keko = download_to_file('https://api.telegram.org/file/bot'..token..'/'..keko6.result.file_path, 'files_SNIIPER/'..msg.content_.document_.file_name_)
+local photo_keko = download_to_file('https://api.telegram.org/file/bot'..token..'/'..keko6.result.file_path, 'files_JOKER/'..msg.content_.document_.file_name_)
 send(msg.chat_id_, msg.id_, 1, "✔┇تم رفع الملف بنجاح", 1, 'html')
 database:del("addfiel"..msg.sender_user_id_)
 end
@@ -5298,9 +5298,9 @@ end
 if is_sudo(msg) then TSsudo(msg) print("\27[1;32m»» is sudo "..msg.sender_user_id_.."\27[m") end
 id = tostring(msg.chat_id_)
 if id and id:match('^(%d+)') then
-database:sadd('SNIIPER:'..bot_id.."userss",msg.chat_id_)
+database:sadd('JOKER:'..bot_id.."userss",msg.chat_id_)
 end
-SNIIPER_run_file(Data_SNIIPER)
+JOKER_run_file(Data_JOKER)
 --         »»                 Start UpdateChat                         ««              --
 elseif (data.ID == "UpdateChat") then
 chat = data.chat_
@@ -5312,14 +5312,14 @@ local text = (result.content_.text_ or result.content_.caption_)
 local msgg = result 
 database:incr('SNIIPER:'..bot_id..'user:editmsg'..msgg.chat_id_..':'..msgg.sender_user_id_)
 if (not is_vip(msgg) and not text) then 
-if database:get("SNIIPER:lo:edit:new:"..bot_id..msgg.chat_id_) then 
+if database:get("JOKER:lo:edit:new:"..bot_id..msgg.chat_id_) then 
 msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs)
 end
 end
 if (result.content_.caption_ and not is_vip(msgg)) then 
 if (result.content_.caption_:match("(.*)@(.*)") or result.content_.caption_:match("@")) then 
-if database:get("lock_username:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_username:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) 
 end 
@@ -5330,39 +5330,39 @@ check_filter_words(result, text)
 if text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or
 text:match("[Tt].[Mm][Ee]") or text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or
 text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get("lock_link:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_link:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end
 if text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or
 text:match("[Tt].[Mm][Ee]") or text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or
 text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get("lock_link.note:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_link.note:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end
 if text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or
 text:match("[Tt].[Mm][Ee]") or text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or
 text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get("lock_link:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_link:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end
 if text:match("[Tt][Ee][Ll][Ee][Gg][Rr][Aa][Mm].[Mm][Ee]") or
 text:match("[Tt].[Mm][Ee]") or text:match("[Tt][Ll][Gg][Rr][Mm].[Mm][Ee]") or
 text:match("[Tt][Ee][Ll][Ee][Ss][Cc][Oo].[Pp][Ee]") then
-if database:get("lock_link.note:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_link.note:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end
 if result.id_ and result.content_.text_ then
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("[Hh][Tt][Tt][Pp][Ss]://") or text:match("[Hh][Tt][Tt][Pp]://") or text:match(".[Ii][Rr]") or text:match(".[Cc][Oo][Mm]") or text:match(".[Oo][Rr][Gg]") or text:match(".[Ii][Nn][Ff][Oo]") or text:match("[Ww][Ww][Ww].") or text:match(".[Tt][Kk]") then
-if database:get("lock_link:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_link:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs)
 end end end 
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("[Hh][Tt][Tt][Pp][Ss]://") or text:match("[Hh][Tt][Tt][Pp]://") or text:match(".[Ii][Rr]") or text:match(".[Cc][Oo][Mm]") or text:match(".[Oo][Rr][Gg]") or text:match(".[Ii][Nn][Ff][Oo]") or text:match("[Ww][Ww][Ww].") or text:match(".[Tt][Kk]") then
-if database:get("lock_link.note:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_link.note:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs)
 end end end end end
@@ -5370,67 +5370,67 @@ if result.id_ and result.content_.text_ then
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("(.*)(@)(.*)") then
-if database:get("lock_username:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_username:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("@") then
-if database:get("lock_username.note:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_username.note:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end
 if result.id_ and result.content_.text_ then
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("#") then
-if database:get("lock_tag:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_tag:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("#") then
-if database:get("lock_tag.note:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_tag.note:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("/")  then
-if database:get("lock_sarha:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_sarha:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("/")  then
-if database:get("lock_sarha.note:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_sarha.note:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("[\216-\219][\128-\191]") then
-if database:get("lock_ar:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_ar:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end  end
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("[\216-\219][\128-\191]") then
-if database:get("lock_ar.note:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_ar.note:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end  end
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("[ASDFGHJKLQWERTYUIOPZXCVBNMasdfghjklqwertyuiopzxcvbnm]") then
-if database:get("lock_en:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_en:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end 
 if not is_vip(msgg) then
 check_filter_words(result, text)
 if text:match("[ASDFGHJKLQWERTYUIOPZXCVBNMasdfghjklqwertyuiopzxcvbnm]") then
-if database:get("lock_en.note:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_en.note:JOKER"..msg.chat_id_..bot_id) then
 local msgs = {[0] = data.message_id_}
 delete_msg(msg.chat_id_,msgs) end end end 
 if not is_vip(msgg) then
 check_filter_words(result, text)
-if database:get("lock_edit:SNIIPER"..msg.chat_id_..bot_id) then
+if database:get("lock_edit:JOKER"..msg.chat_id_..bot_id) then
 local id = msg.message_id_
 local msgs = {[0] = id}
 local chat = msg.chat_id_
@@ -5449,5 +5449,5 @@ ____  __    _  •   _ ____  _______  _____
  __)  | | \ \ || | | |     | |__|    ||\\
 |____/|_|  \__||_| |_|     | |_____  || \\
                            |_|_____| 
-           CH > @SNIIPERTIME
+           CH > @llJOKERll
 --]]
