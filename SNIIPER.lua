@@ -4499,9 +4499,9 @@ t = 'مميز الكروب'
 else
 t = 'عضو تافه😹'
 end
-if not database:get('SNIIPER:'..bot_id..'id:mute'..msg.chat_id_) then
-if not database:get('SNIIPER:'..bot_id..'id:photo'..msg.chat_id_) then
-if not database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_) then 
+if not database:get('JOKER:'..bot_id..'id:mute'..msg.chat_id_) then
+if not database:get('JOKER:'..bot_id..'id:photo'..msg.chat_id_) then
+if not database:get("JOKER:gr:id:text:"..bot_id..msg.chat_id_) then 
 local keko_text = {
 "رجع صورتك القديمه طالع جنك بسطال😹",
 "هاي الصوره حلوه عاشت ايدك😻♥️",
@@ -4518,13 +4518,13 @@ local keko_text = {
 keko3 = math.random(#keko_text)
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,"📸┇"..keko_text[keko3].."\n🌃┇عدد صورك ~» "..all_photo_SNIIPER.."\n📟┇ايديك ~» ("..msg.sender_user_id_..")\n📤┇ ~» معرفك"..keko_info.."\n📍┇رتبتك ~» "..t.."\n📨┇رسائلك ~» {"..user_msgs.."}\n📋┇التعديلات ~» {"..edit.."}\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ",msg.id_,msg.id_.."")
 else 
-local SNIIPER_new_text = database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_)
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#username',(keko_info or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#edit',(edit or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#stast',(t or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#photos',(all_photo_SNIIPER or 'لا يوجد'))
+local JOKER_new_text = database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_)
+local JOKER_new_text = JOKER_new_text:gsub('#username',(keko_info or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#edit',(edit or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#stast',(t or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#photos',(all_photo_JOKER or 'لا يوجد'))
 sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,SNIIPER_new_text,msg.id_,msg.id_.."")
 end
 else
@@ -4532,8 +4532,8 @@ if is_sudo(msg) then
 t = 'مطور البوت'
 elseif is_creator(msg) then
 t = 'منشئ الكروب'
-elseif (database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) and database:get("SNIIPER:all_if:"..database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) ..bot_id..msg.chat_id_)) then 
-t = database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_)
+elseif (database:get("JOKER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) and database:get("JOKER:all_if:"..database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) ..bot_id..msg.chat_id_)) then 
+t = database:get("JOKER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_)
 elseif is_owner(msg) then
 t = 'مدير الكروب'
 elseif is_mod(msg) then
@@ -4543,17 +4543,17 @@ t = 'مميز الكروب'
 else
 t = 'عضو تافه😹'
 end
-if not database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_) then 
+if not database:get("JOKER:gr:id:text:"..bot_id..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_, 1, "📟┇ايديك ~» ("..msg.sender_user_id_..")\n♠┇ ~» معرفك"..keko_info.."\n📡┇رتبتك ~» "..t.."\n📨┇رسائلك ~» <b>{"..user_msgs.."}</b>\n📧┇التعديلات ~» <b>{"..edit.."}</b>\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉", 1, 'html')
 else 
-local SNIIPER_new_text = database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_)
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#username',(keko_info or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#edit',(edit or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#stast',(t or 'لا يوجد'))   
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#photos',(all_photo_SNIIPER or 'لا يوجد'))
-send(msg.chat_id_, msg.id_, 1, SNIIPER_new_text, 1, 'html')
+local JOKER_new_text = database:get("JOKER:gr:id:text:"..bot_id..msg.chat_id_)
+local JOKER_new_text = JOKER_new_text:gsub('#username',(keko_info or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#edit',(edit or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#stast',(t or 'لا يوجد'))   
+local JOKER_new_text = JOKER_new_text:gsub('#photos',(all_photo_JOKER or 'لا يوجد'))
+send(msg.chat_id_, msg.id_, 1, JOKER_new_text, 1, 'html')
 end   
 end
 else
@@ -4563,8 +4563,8 @@ if is_sudo(msg) then
 t = 'مطور البوت'
 elseif is_creator(msg) then
 t = 'منشئ الكروب'
-elseif (database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) and database:get("SNIIPER:all_if:"..database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) ..bot_id..msg.chat_id_)) then 
-t = database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_)
+elseif (database:get("JOKER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) and database:get("JOKER:all_if:"..database:get("JOKER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) ..bot_id..msg.chat_id_)) then 
+t = database:get("JOKER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_)
 elseif is_owner(msg) then
 t = 'مدير الكروب'
 elseif is_mod(msg) then
@@ -4574,27 +4574,27 @@ t = 'مميز الكروب'
 else
 t = 'عضو تافه😹'
 end
-if not database:get('SNIIPER:'..bot_id..'id:mute'..msg.chat_id_) then
-if not database:get('SNIIPER:'..bot_id..'id:photo'..msg.chat_id_) then
-if not database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_) then 
+if not database:get('JOKER:'..bot_id..'id:mute'..msg.chat_id_) then
+if not database:get('JOKER:'..bot_id..'id:photo'..msg.chat_id_) then
+if not database:get("JOKER:gr:id:text:"..bot_id..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_, 1, "❕┇انت لا تملك صوره لحسابك\n📟┇ايديك ~» ("..msg.sender_user_id_..")\n♠┇ ~» معرفك"..keko_info.."\n📡┇رتبتك ~» "..t.."\n📨┇رسائلك ~» <b>{"..user_msgs.."}</b>\n📧┇التعديلات ~» <b>{"..edit.."}</b>\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ", 1, 'html')
 else 
-local SNIIPER_new_text = database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_)
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#username',(keko_info or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#edit',(edit or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#stast',(t or 'لا يوجد'))   
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#photos',(all_photo_SNIIPER or 'لا يوجد'))
-send(msg.chat_id_, msg.id_, 1, SNIIPER_new_text, 1, 'html')
+local JOKER_new_text = database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_)
+local JOKER_new_text = JOKER_new_text:gsub('#username',(keko_info or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#edit',(edit or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#stast',(t or 'لا يوجد'))   
+local JOKER_new_text = JOKER_new_text:gsub('#photos',(all_photo_JOKER or 'لا يوجد'))
+send(msg.chat_id_, msg.id_, 1, JOKER_new_text, 1, 'html')
 end
 else
 if is_sudo(msg) then
 t = 'مطور البوت'
 elseif is_creator(msg) then
 t = 'منشئ الكروب'
-elseif (database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) and database:get("SNIIPER:all_if:"..database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) ..bot_id..msg.chat_id_)) then 
-t = database:get("SNIIPER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_)
+elseif (database:get("JOKER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) and database:get("JOKER:all_if:"..database:get("JOKER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_) ..bot_id..msg.chat_id_)) then 
+t = database:get("JOKER:name_user:"..bot_id..msg.chat_id_..msg.sender_user_id_)
 elseif is_owner(msg) then
 t = 'مدير الكروب'
 elseif is_mod(msg) then
@@ -4604,17 +4604,17 @@ t = 'مميز الكروب'
 else
 t = 'عضو تافه 😹'
 end
-if not database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_) then 
+if not database:get("JOKER:gr:id:text:"..bot_id..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_, 1, "📟┇ايديك ~» ("..msg.sender_user_id_..")\n♠┇معرفك ~» "..keko_info.."\n📡┇رتبتك ~» "..t.."\n📨┇رسائلك ~» <b>{"..user_msgs.."}</b>\n📧┇التعديلات ~» <b>{"..edit.."}</b>\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉", 1, 'html')
 else 
-local SNIIPER_new_text = database:get("SNIIPER:gr:id:text:"..bot_id..msg.chat_id_)
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#username',(keko_info or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#edit',(edit or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#stast',(t or 'لا يوجد'))   
-local SNIIPER_new_text = SNIIPER_new_text:gsub('#photos',(all_photo_SNIIPER or 'لا يوجد'))
-send(msg.chat_id_, msg.id_, 1, SNIIPER_new_text, 1, 'html')  
+local JOKER_new_text = database:get("JOKER:gr:id:text:"..bot_id..msg.chat_id_)
+local JOKER_new_text = JOKER_new_text:gsub('#username',(keko_info or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#id',(msg.sender_user_id_ or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#edit',(edit or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#msgs',(user_msgs or 'لا يوجد'))
+local JOKER_new_text = JOKER_new_text:gsub('#stast',(t or 'لا يوجد'))   
+local JOKER_new_text = JOKER_new_text:gsub('#photos',(all_photo_JOKER or 'لا يوجد'))
+send(msg.chat_id_, msg.id_, 1, JOKER_new_text, 1, 'html')  
 end 
 end
 else
@@ -4654,34 +4654,34 @@ end
 getUser(memb[2],whois)
 end
 if (text and text == 'تفعيل التثبيت') and is_owner(msg) then
-if not database:get('SNIIPER:'..bot_id..'pin:mute'..msg.chat_id_) then
+if not database:get('JOKER:'..bot_id..'pin:mute'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '√┇التثبيت مفعل, 'md')
 else
 send(msg.chat_id_, msg.id_, 1, '√┇تم تفعيل التثبيت', 1, 'md')
-database:del('SNIIPER:'..bot_id..'pin:mute'..msg.chat_id_)
+database:del('JOKER:'..bot_id..'pin:mute'..msg.chat_id_)
 end
 end
 if (text and text == 'تعطيل التثبيت') and is_owner(msg) then
-if database:get('SNIIPER:'..bot_id..'pin:mute'..msg.chat_id_) then
+if database:get('JOKER:'..bot_id..'pin:mute'..msg.chat_id_) then
 send(msg.chat_id_, msg.id_, 1, '√┇التثبيت بالفعل معطل❗', 1, 'md')
 else
 send(msg.chat_id_, msg.id_, 1, '√┇تم تعطيل التثبيت', 1, 'md')
-database:set('SNIIPER:'..bot_id..'pin:mute'..msg.chat_id_,true)
+database:set('JOKER:'..bot_id..'pin:mute'..msg.chat_id_,true)
 end
 end
 if text:match("^تثبيت$") and is_mod(msg) and not is_owner(msg) then
 local id = msg.id_
 local msgs = {[0] = id}
-if not database:get('SNIIPER:'..bot_id..'pin:mute'..msg.chat_id_) then
+if not database:get('JOKER:'..bot_id..'pin:mute'..msg.chat_id_) then
 pin(msg.chat_id_,msg.reply_to_message_id_,0)
-database:set('SNIIPER:'..bot_id..'pinnedmsg'..msg.chat_id_,msg.reply_to_message_id_)
+database:set('JOKER:'..bot_id..'pinnedmsg'..msg.chat_id_,msg.reply_to_message_id_)
 send(msg.chat_id_, msg.id_, 1, '√┇تم تثبيت الرساله',1, 'md')
 else
 send(msg.chat_id_, msg.id_, 1, '√┇التثبيت معطل',1, 'md')
 end
 end
 if text:match("^الغاء تثبيت$") and is_mod(msg) and not is_owner(msg) or text:match("^الغاء التثبيت") and is_mod(msg) and not is_owner(msg) then
-if not database:get('SNIIPER:'..bot_id..'pin:mute'..msg.chat_id_) then
+if not database:get('JOKER:'..bot_id..'pin:mute'..msg.chat_id_) then
 unpinmsg(msg.chat_id_)
 send(msg.chat_id_, msg.id_, 1, '√┇تم الغاء تثبيت الرساله', 1, 'md')
 else
@@ -4692,7 +4692,7 @@ if text:match("^تثبيت$") and is_owner(msg) then
 local id = msg.id_
 local msgs = {[0] = id}
 pin(msg.chat_id_,msg.reply_to_message_id_,0)
-database:set('SNIIPER:'..bot_id..'pinnedmsg'..msg.chat_id_,msg.reply_to_message_id_)
+database:set('JOKER:'..bot_id..'pinnedmsg'..msg.chat_id_,msg.reply_to_message_id_)
 send(msg.chat_id_, msg.id_, 1, '√┇تم تثبيت الرساله',1, 'md')
 end
 if text:match("^الغاء تثبيت$") and is_owner(msg) or text:match("^الغاء التثبيت") and is_owner(msg) then
@@ -4700,29 +4700,29 @@ unpinmsg(msg.chat_id_)
 send(msg.chat_id_, msg.id_, 1, '√┇تم الغاء تثبيت الرساله', 1, 'md')
 end
 if text:match("^مشاهده منشور$") then
-database:set('SNIIPER:'..bot_id..'viewget'..msg.sender_user_id_,true)
+database:set('JOKER:'..bot_id..'viewget'..msg.sender_user_id_,true)
 send(msg.chat_id_, msg.id_, 1, '📥┇قم بارسال المنشور الان ',1, 'md')
 end
 if (text and text == 'استعاده الاوامر') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
-redis:del('SNIIPER:'..bot_id..'help', text)
-redis:del('SNIIPER:'..bot_id..'h1', text)
-redis:del('SNIIPER:'..bot_id..'h2', text)
-redis:del('SNIIPER:'..bot_id..'h3', text)
-redis:del('SNIIPER:'..bot_id..'h4', text)
-redis:del('SNIIPER:'..bot_id..'h5', text)
-redis:del('SNIIPER:'..bot_id..'h6', text)
+redis:del('JOKER:'..bot_id..'help', text)
+redis:del('JOKER:'..bot_id..'h1', text)
+redis:del('JOKER:'..bot_id..'h2', text)
+redis:del('JOKER:'..bot_id..'h3', text)
+redis:del('JOKER:'..bot_id..'h4', text)
+redis:del('JOKER:'..bot_id..'h5', text)
+redis:del('JOKER:'..bot_id..'h6', text)
 send(msg.chat_id_, msg.id_, 1, '√┇تم استعاده جميع كلايش الاوامر', 1, 'html')
 end
 if (text and text == 'تغير امر الاوامر') and tonumber(msg.sender_user_id_) == tonumber(sudo_add) then
 send(msg.chat_id_, msg.id_, 1, '📥┇الان يمكنك ارسال الكليشه  ليتم حفظها', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'hhh'..msg.sender_user_id_..'', 'msg')
+redis:set('JOKER:'..bot_id..'hhh'..msg.sender_user_id_..'', 'msg')
 return false end
 if text:match("^(.*)$") then
-local keko2 = redis:get('SNIIPER:'..bot_id..'hhh'..msg.sender_user_id_..'')
+local keko2 = redis:get('JOKER:'..bot_id..'hhh'..msg.sender_user_id_..'')
 if keko2 == 'msg' then
 send(msg.chat_id_, msg.id_, 1, '√┇تم حفظ الكليشه يمكنك اظهارها بارسال الامر', 1, 'html')
-redis:set('SNIIPER:'..bot_id..'hhh'..msg.sender_user_id_..'', 'no')
-redis:set('SNIIPER:'..bot_id..'help', text)
+redis:set('JOKER:'..bot_id..'hhh'..msg.sender_user_id_..'', 'no')
+redis:set('JOKER:'..bot_id..'help', text)
 send(msg.chat_id_, msg.id_, 1, text , 1, 'html')
 return false end
 end
