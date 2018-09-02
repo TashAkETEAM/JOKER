@@ -4734,7 +4734,7 @@ local text =  [[
 👨🏻‍💼¦ <م3> لعرض اوامر المدراء
 📮¦ <م4> لعرض اوامر المطور
 ————————————
-‏📡┇Ch --⪼ @JOKERTIME
+‏📡┇Ch --⪼ @llJOKERll
 ]]
 send(msg.chat_id_, msg.id_, 1, (help or text), 1, 'html')
 end
@@ -4784,7 +4784,7 @@ local text =  [[
 ♠️┇قفل / فتح 《》 التكرار
 ♠️┇قفل / فتح 《》 الكلايش
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-CH:- @JOKERTIME
+CH:- @llJOKERll 
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h1 or text), 1, 'html')
@@ -4859,7 +4859,7 @@ local text =  [[
 🔘┇الصوره
 📮┇الرابط
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-📡┇Ch ~» @JOKERTIME
+📡┇Ch ~» @llJOKERll 
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h2 or text), 1, 'html')
@@ -4913,7 +4913,7 @@ local text =  [[
 ♦┇تفعيل/تعطيل  《》الحظر
 ♦┇تفعيل/تعطيل  《》الطرد 
 ﹎﹎﹎﹎﹎﹎﹎﹎
-Ch ~» @JOKERTIME
+Ch ~» @llJOKERll 
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h3 or text), 1, 'html')
@@ -4980,7 +4980,7 @@ local text =  [[
 ♣️┇تغير رابط الانلاين+الرابط
 ♣️┇تفعيل《》تعطيل/الانلاين
 ﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎﹎
-CH:- @JOKERTIME
+CH:- @llJOKERll 
 
 ]]
 send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
@@ -4991,14 +4991,14 @@ local text =  [[
 
 🌐┇<strong>JOKER TEAM</strong>
 
-🖥┇<a href="https://telegram.me/JOKERTIME">قناه السورس</a>
+🖥┇<a href="https://telegram.me/llJOKERll">قناه السورس</a>
 ♠┇<a href="https://telegram.me/JOKER_DEV">قناه شروحات سورس</a>
 📁┇<a href="https://telegram.me/JOKERfiles">قناه ملفات السورس</a>
 
 🔎┇<a href="https://t.me/JOKER_DEV/227">طريقه التنصيب</a>
 
-📮┇<a href="t.me/ii8ili">لـ تواصل </a> 
-📮┇<a href="t.me/RRR_RP">2لـ تواصل </a> 
+📮┇<a href="t.me/TH3LEDR">لـ تواصل </a> 
+📮┇<a href="t.me/LO_RD">2لـ تواصل </a> 
 ]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
