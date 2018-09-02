@@ -4986,19 +4986,28 @@ CH:- @llJOKERll
 send(msg.chat_id_, msg.id_, 1, (h4 or text), 1, 'html')
 end
 if text:match("^اصدار$") or text:match("^الاصدار$") or text:match("^السورس$") or text:match("^سورس$") then
-local text =  [[
-🤚🏻┇اهلا بك في سورس الجوكر
+🕹┇TEAM JOKER   
+┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ 
+♠️┇لتنصيب سورس الجوكر الجديد 🔍 
+✾══════ •『✾』• ══════✾
+📮» فقط أضغط على الكود 👇 ليتم النسخ 
+`git clone https://github.com/TH3JOKERTEM/JOKER && cd JOKER && chmod +x install.sh && ./install.sh`
+✾══════ •『✾』• ══════✾ 
+📟┇من يخلص التنصيب يطلب منك التوكن
+🔘┇تحطه وتضغط Enter 
+👨‍🔧┇بعده يطلب منك ايدي المطور 
+🔘┇تحطه وتضغط Enter 
+✾══════ •『✾』• ══════✾ 
+💡┇كود الرن
+`./JOKER/ts`
+✾══════ •『✾』• ══════✾ 
+❌┇كود الحذف
+`rm -fr JOKER`
+✾══════ •『✾』• ══════✾
+🙋🏼‍♂┇ومبروك نصبت سورس الجوكر،
+✨┇تيجي الجديد ع التوكن🍃
 
-🌐┇<strong>JOKER TEAM</strong>
-
-🖥┇<a href="https://telegram.me/llJOKERll">قناه السورس</a>
-♠┇<a href="https://telegram.me/JOKER_DEV">قناه شروحات سورس</a>
-📁┇<a href="https://telegram.me/JOKERfiles">قناه ملفات السورس</a>
-
-🔎┇<a href="https://t.me/JOKER_DEV/227">طريقه التنصيب</a>
-
-📮┇<a href="t.me/TH3LEDR">لـ تواصل </a> 
-📮┇<a href="t.me/LO_RD">2لـ تواصل </a> 
+🖥┇قناة السورس ☜ @llJOKERll 
 ]]
 send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
 end
