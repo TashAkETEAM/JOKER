@@ -41,7 +41,7 @@
   [ارسلان](https://telegram.me/RRR_RP) <br>
   
   
-  [قناة السورس الجوكر ](https://telegram.me/llJOKERll) <br>
+[ TEAM JOKER ](https://telegram.me/llJOKERll) <br>
 
 # <p align="center"> كروب دعم السورس للتكلم حول المشاكل
 
